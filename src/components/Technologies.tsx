@@ -1,27 +1,24 @@
-// components/TestimonialCarousel.jsx
-
 
 const images = [
-    '/images/team.png',
-    '/images/team.png',
-    '/images/team.png',
-    '/images/team.png',
-    '/images/team.png',
-    '/images/team.png',
-    '/images/team.png',
-    '/images/team.png',
+    '/images/aws.png',
+    '/images/dj.png',
+    '/images/g.png',
+    '/images/go.png',
+    '/images/react.png',
+    '/images/qirolab.png',
+    
   ];
   
   const TestimonialCarousel = () => {
     return (
-      <div className="relative overflow-hidden w-[80%] m-auto bg-gray-100  ">
+      <div className="relative overflow-hidden w-[80%] m-auto bg-gray-100 shadow-lg  ">
         <div className=" hidden md:flex justify-start align-middle animate-scroll">
-          {images.concat(images).map((src, index) => (  // Duplicate images for seamless scrolling
-            <div key={index} className="flex-none mx-2 self-center py-10">
+          {images.concat(images).map((src, index) => (  
+            <div key={index} className="flex-none mx-10 self-center py-10">
               <img
                 src={src}
                 alt={`Image ${index + 1}`}
-                className=" w-[100px] h-[100px] object-cover rounded-full shadow-md"
+                className="grayscale-[100%] hover:grayscale-0 w-[100px] h-[100px] object-cover rounded-full shadow-md"
               />
             </div>
           ))}

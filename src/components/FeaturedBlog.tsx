@@ -1,5 +1,5 @@
 import React from 'react';
-
+import AnimatedLineDiv from './AnimatedLineDiv';
 const FeaturedBlogs = () => {
   const blogs = [
     {
@@ -32,6 +32,8 @@ const FeaturedBlogs = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Our Featured Blogs
         </h2>
+        <div className='flex justify-start items-center mt-1 mb-4'>
+          <AnimatedLineDiv/></div>
         <p className="text-gray-600 mb-8">
           Want to know about the latest technology trends? You can find all of them here.
         </p>
@@ -40,7 +42,7 @@ const FeaturedBlogs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog) => (
             <div key={blog.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover hover:scale-125 transition-all duration-300 ease-in-out" />
+              <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out" />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800">{blog.title}</h3>
                 <p className="text-blue-500 mt-2">By {blog.author}</p>

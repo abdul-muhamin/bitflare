@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3f3d56] text-white py-10">
+    <footer className="bg-[#3f3d56] text-white pt-[100px] px-10 z-[-1]">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 px-6 ">
         {/* Left Section */}
         <div>
@@ -13,7 +13,7 @@ export default function Footer() {
           <p className="mt-2 text-gray-300">
             We harvest your requirements into living products!
           </p>
-          <div className="mt-4 space-y-2 text-gray-400">
+          <div className="mt-4 text-lg space-y-2 text-gray-400">
             <div className="flex items-center">
               <svg className="w-6 h-6 mr-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12H8m0 0h7m-7 0l-2-2m2 2l2-2m0 2v5m0-5V7m0 5l-2 2m2-2l2 2"></path>
@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="text-center text-gray-400 mt-8">
+      <div className="text-center text-xl text-gray-400 pt-24 pb-8">
         &copy; RipeSeed 2023. All Right Reserved
       </div>
     </footer>

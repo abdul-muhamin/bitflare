@@ -12,8 +12,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          "generative": "url(/images/backaibot.png)"
+          "generative": "url(/images/backaibot.png)",
+          "background-about": "url(/images/aboutimage.png)"
           
+      },
+      colors: {
+        yellow: '#facc15',
+        red: '#ef4444',
+        green: '#10b981',
       },
     },
   },

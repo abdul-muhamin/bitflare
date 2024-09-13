@@ -1,39 +1,95 @@
+"use client";
+import { useState, useEffect } from "react";
+import { dedicatedServicesItems } from "../utils/dedicatedServicesItems";
+import AnimatedLineDiv from './AnimatedLineDiv';
+
+interface ServiceItem {
+  Label: string;
+  description: string;
+  item1?: string;
+  item2?: string;
+  item3?: string;
+  item4?: string;
+  item5?: string;
+}
+
 export default function DedicatedServices() {
-    return (
-      <div className="min-h-screen  text-white flex justify-evenly align-middle">
-        {/* Left Sidebar */}
-        <div className="bg-gray-900 w-full md:flex-1 lg:flex-1 p-8">
-          <h2 className="text-2xl font-bold mb-6">DEDICATED SERVICES</h2>
-          <p className="text-gray-400 mb-8">
-            Creating high-performance websites & apps, using the latest technologies.
-          </p>
-          <ul className="w-2/3 ">
-            <li className="cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">
-              <span className="">UI/UX</span>
-            </li>
-            <li className="cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">Cloud Services</li>
-            <li className="cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">AI/ChatGPT</li>
-            <li className="cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">App Development</li>
-            <li className=" cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">Chrome Extensions</li>
-            <li className="cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">DevOps</li>
-            <li className="cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">Game Development</li>
-            <li className=" cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">Web Development</li>
-            <li className=" cursor-pointer space-y-6 hover:bg-gray-700 hover:rounded-lg p-6">Automation Tools</li>
-          </ul>
-        </div>
-  
-        {/* Right Content */}
-        <div className="hidden lg:block md:flex-1 bg-white text-gray-900 p-12">
-          <h2 className="text-4xl font-bold mb-6">UI/UX</h2>
-          <p className="text-xl mb-6">
-            RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.
-          </p>
-          <ul className="text-lg space-y-4">
-            <li>Figma</li>
-            <li>Prototyping</li>
-          </ul>
-        </div>
-      </div>
-    );
+  const [selectedServiceIndex, setSelectedServiceIndex] = useState<number | null>(null);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  const itemSelected = (index: number) => {
+    setSelectedServiceIndex(index === selectedServiceIndex ? null : index); // Toggle selection
   }
-  
+
+  // Check screen size to detect mobile view
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 1024); // adjust breakpoint for mobile/tablet
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Initial check
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return (
+    <div className="min-h-screen text-white flex flex-col lg:flex-row justify-evenly items-start">
+      {/* Left Sidebar */}
+      <div className="bg-gray-900 w-full md:flex-1 lg:flex-1 p-8">
+        <h2 className="text-2xl font-bold mb-6">DEDICATED SERVICES</h2>
+        <p className="text-gray-400 mb-8">
+          Creating high-performance websites & apps, using the latest technologies.
+        </p>
+        <ul className="space-y-6">
+          {dedicatedServicesItems.map((item, index) => (
+            <div key={index} className="relative">
+              <li
+                className="cursor-pointer hover:bg-gray-700 hover:rounded-lg p-6"
+                onClick={() => itemSelected(index)}
+              >
+                {item.Label}
+              </li>
+
+              {/* Show details directly below the selected item */}
+              {isMobileView && selectedServiceIndex === index && (
+                <div className="bg-white mt-2 p-6 rounded-lg text-black">
+                  {/* AnimatedLineDiv will show only when a service is selected */}
+                  <div className='flex justify-start items-start mb-4'>
+                    <AnimatedLineDiv/>
+                  </div>
+                  <ul className="text-md space-y-3">
+                    {item.item1 && <li>{item.item1}</li>}
+                    {item.item2 && <li>{item.item2}</li>}
+                    {item.item3 && <li>{item.item3}</li>}
+                    {item.item4 && <li>{item.item4}</li>}
+                    {item.item5 && <li>{item.item5}</li>}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ))}
+        </ul>
+      </div>
+
+      {/* Right Content (only shown on large screens) */}
+      <div className={`hidden lg:flex lg:flex-col md:flex-1 bg-white text-gray-900 p-12`}>
+        {selectedServiceIndex !== null && (
+          <>
+            <h2 className="text-4xl font-bold mb-6">{dedicatedServicesItems[selectedServiceIndex].Label}</h2>
+            <p className="text-xl mb-6">{dedicatedServicesItems[selectedServiceIndex].description}</p>
+            <ul className="text-lg space-y-4">
+              {dedicatedServicesItems[selectedServiceIndex].item1 && <li>{dedicatedServicesItems[selectedServiceIndex].item1}</li>}
+              {dedicatedServicesItems[selectedServiceIndex].item2 && <li>{dedicatedServicesItems[selectedServiceIndex].item2}</li>}
+              {dedicatedServicesItems[selectedServiceIndex].item3 && <li>{dedicatedServicesItems[selectedServiceIndex].item3}</li>}
+              {dedicatedServicesItems[selectedServiceIndex].item4 && <li>{dedicatedServicesItems[selectedServiceIndex].item4}</li>}
+              {dedicatedServicesItems[selectedServiceIndex].item5 && <li>{dedicatedServicesItems[selectedServiceIndex].item5}</li>}
+            </ul>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}

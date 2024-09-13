@@ -6,12 +6,12 @@ import DedicatedServices from "@/components/DedicatedServices";
 import AchievementsSection from "@/components/AchievementsSection";
 import RecentWork from "@/components/RecentWork";
 import FeaturedBlogs from "@/components/FeaturedBlog";
-// import Testimonial from "@/components/Testimonial";
+import Testimonial from "@/components/Testimonial";
 import TechImages from "@/components/Technologies";
 import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Landingpage/>
       <GenerativeAISolutions/>
       <HowWeAre/>
@@ -19,7 +19,7 @@ export default function Home() {
       <RecentWork/>
       <DedicatedServices/>
       <FeaturedBlogs/>
-      {/* <Testimonial/> */}
+      <Testimonial/>
       <TechImages/>
       <ContactForm/>
     </main>

@@ -1,17 +1,19 @@
 "use client";
 import React from "react";
-
+import AnimatedLineDiv from "./AnimatedLineDiv";
 const ContactForm = () => {
   return (
     <div className="max-w-full mx-auto p-8 bg-white rounded-lg shadow-lg">
       {/* Heading Section */}
       <div className="my-8 px-8">
         <h2 className="text-3xl font-bold text-black mb-2">INTERESTED IN WORKING WITH US?</h2>
+        <div className='flex justify-start items-center mt-1 mb-4'>
+          <AnimatedLineDiv/></div>
         <p className="text-lg text-gray-600">Let's talk and get started</p>
       </div>
 
       {/* Form Section */}
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto p-16 bg-gray-100 rounded-lg shadow-lg">
+      <form className="grid grid-cols-1  md:grid-cols-2 gap-6 max-w-7xl mx-auto p-16 bg-gray-100 rounded-lg shadow-lg">
         {/* First Name Input */}
         <input
           type="text"
