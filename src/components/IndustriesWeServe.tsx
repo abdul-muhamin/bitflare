@@ -1,22 +1,33 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from 'react';
 import AnimatedLineDiv from './AnimatedLineDiv';
-import { FaUniversity ,FaGraduationCap , FaPlayCircle , FaUtensils ,FaGamepad , FaHeartbeat , FaHome ,FaFutbol , FaTruck ,FaPlane   } from "react-icons/fa";
+import { FaUniversity, FaGraduationCap, FaPlayCircle, FaUtensils, FaGamepad, FaHeartbeat, FaHome, FaFutbol, FaTruck, FaPlane } from 'react-icons/fa';
+import { Industry } from '../utils/interface'; // Import the interface
 
-
-const industries = [
-  { name: 'Bank', icon: <FaUniversity style={{color:"green"}} />  },
-  { name: 'Education', icon: <FaGraduationCap style={{color:"green"}} /> },
-  { name: 'Entertainment', icon: <FaPlayCircle style={{color:"yellow"}} /> },
-  { name: 'Food', icon: <FaUtensils style={{color:"green"}} /> },
-  { name: 'Gaming', icon: <FaGamepad style={{color:"green"}} /> },
-  { name: 'Health', icon: <FaHeartbeat style={{color:"pink"}} /> },
-  { name: 'Real Estate', icon: <FaHome style={{color:"pink"}}  /> },
-  { name: 'Sports', icon: <FaFutbol style={{color:"yellow"}} /> },
-  { name: 'Transport', icon: <FaTruck style={{color:"yellow"}} /> },
-  { name: 'Travel', icon: <FaPlane style={{color:"pink"}} /> },
-];
+const iconMap: { [key: string]: JSX.Element } = {
+  FaUniversity: <FaUniversity />,
+  FaGraduationCap: <FaGraduationCap />,
+  FaPlayCircle: <FaPlayCircle />,
+  FaUtensils: <FaUtensils />,
+  FaGamepad: <FaGamepad />,
+  FaHeartbeat: <FaHeartbeat />,
+  FaHome: <FaHome />,
+  FaFutbol: <FaFutbol />,
+  FaTruck: <FaTruck />,
+  FaPlane: <FaPlane />,
+};
 
 const IndustriesWeServe: React.FC = () => {
+  const [industries, setIndustries] = useState<Industry[]>([]);
+
+  useEffect(() => {
+    // Fetch the industries data from the public data.json file
+    fetch('/data.json')
+      .then((response) => response.json())
+      .then((data) => setIndustries(data.industries))
+      .catch((err) => console.error('Error fetching industries:', err));
+  }, []);
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
       <div className="text-center mb-12">
@@ -37,7 +48,9 @@ const IndustriesWeServe: React.FC = () => {
             className="industries-box flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md transition duration-300 border-4 border-transparent"
           >
             {/* Render the icon with a larger size */}
-            <div className="text-6xl mb-4 text-center">{industry.icon}</div>
+            <div className="text-6xl mb-4 text-center" style={{ color: industry.color }}>
+              {iconMap[industry.icon]}
+            </div>
             <h3 className="text-xl font-medium text-gray-800 text-center">{industry.name}</h3>
           </div>
         ))}

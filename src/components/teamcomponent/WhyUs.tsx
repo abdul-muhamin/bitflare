@@ -1,14 +1,9 @@
 import React from "react";
+import { Stat } from "../../utils/interface";
+import data from "../../../public/data.json"; // Import the whole data.json
 
 const WhyUs = () => {
-  const stats = [
-    { id: 1, label: "Dedicated professionals", value: "25+", icon: "👩‍💻", color: "text-yellow-500" },
-    { id: 2, label: "Countries Served", value: "12+", icon: "🌍", color: "text-teal-500" },
-    { id: 3, label: "Delivered Projects", value: "260+", icon: "📊", color: "text-pink-500" },
-    { id: 4, label: "Years of experience", value: "2+", icon: "📅", color: "text-teal-500" },
-    { id: 5, label: "Repeat Client-Ratio", value: "15+", icon: "🔄", color: "text-pink-500" },
-    { id: 6, label: "Startups we worked with", value: "10+", icon: "🤝", color: "text-yellow-500" },
-  ];
+  const stats: Stat[] = data.stats; // Access the stats property from the imported data
 
   return (
     <section className="py-12 bg-gray-50">

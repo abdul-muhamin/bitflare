@@ -1,25 +1,19 @@
 "use client";
 import { useState, useEffect } from "react";
-import { dedicatedServicesItems } from "../utils/dedicatedServicesItems";
+import { ServiceItem } from "../utils/interface"; // Import the interface
 import AnimatedLineDiv from './AnimatedLineDiv';
-
-interface ServiceItem {
-  Label: string;
-  description: string;
-  item1?: string;
-  item2?: string;
-  item3?: string;
-  item4?: string;
-  item5?: string;
-}
+import data from "../../public/data.json"; // Import the entire data JSON
 
 export default function DedicatedServices() {
   const [selectedServiceIndex, setSelectedServiceIndex] = useState<number | null>(null);
   const [isMobileView, setIsMobileView] = useState(false);
 
+  // Extract dedicatedServices from the JSON data
+  const { dedicatedServices } = data;
+
   const itemSelected = (index: number) => {
     setSelectedServiceIndex(index === selectedServiceIndex ? null : index); // Toggle selection
-  }
+  };
 
   // Check screen size to detect mobile view
   useEffect(() => {
@@ -44,7 +38,7 @@ export default function DedicatedServices() {
           Creating high-performance websites & apps, using the latest technologies.
         </p>
         <ul className="space-y-6">
-          {dedicatedServicesItems.map((item, index) => (
+          {dedicatedServices.map((item: ServiceItem, index: number) => (
             <div key={index} className="relative">
               <li
                 className="cursor-pointer hover:bg-gray-700 hover:rounded-lg p-6"
@@ -58,7 +52,7 @@ export default function DedicatedServices() {
                 <div className="bg-white mt-2 p-6 rounded-lg text-black">
                   {/* AnimatedLineDiv will show only when a service is selected */}
                   <div className='flex justify-start items-start mb-4'>
-                    <AnimatedLineDiv/>
+                    <AnimatedLineDiv />
                   </div>
                   <ul className="text-md space-y-3">
                     {item.item1 && <li>{item.item1}</li>}
@@ -78,14 +72,14 @@ export default function DedicatedServices() {
       <div className={`hidden lg:flex lg:flex-col md:flex-1 bg-white text-gray-900 p-12`}>
         {selectedServiceIndex !== null && (
           <>
-            <h2 className="text-4xl font-bold mb-6">{dedicatedServicesItems[selectedServiceIndex].Label}</h2>
-            <p className="text-xl mb-6">{dedicatedServicesItems[selectedServiceIndex].description}</p>
+            <h2 className="text-4xl font-bold mb-6">{dedicatedServices[selectedServiceIndex].Label}</h2>
+            <p className="text-xl mb-6">{dedicatedServices[selectedServiceIndex].description}</p>
             <ul className="text-lg space-y-4">
-              {dedicatedServicesItems[selectedServiceIndex].item1 && <li>{dedicatedServicesItems[selectedServiceIndex].item1}</li>}
-              {dedicatedServicesItems[selectedServiceIndex].item2 && <li>{dedicatedServicesItems[selectedServiceIndex].item2}</li>}
-              {dedicatedServicesItems[selectedServiceIndex].item3 && <li>{dedicatedServicesItems[selectedServiceIndex].item3}</li>}
-              {dedicatedServicesItems[selectedServiceIndex].item4 && <li>{dedicatedServicesItems[selectedServiceIndex].item4}</li>}
-              {dedicatedServicesItems[selectedServiceIndex].item5 && <li>{dedicatedServicesItems[selectedServiceIndex].item5}</li>}
+              {dedicatedServices[selectedServiceIndex].item1 && <li>{dedicatedServices[selectedServiceIndex].item1}</li>}
+              {dedicatedServices[selectedServiceIndex].item2 && <li>{dedicatedServices[selectedServiceIndex].item2}</li>}
+              {dedicatedServices[selectedServiceIndex].item3 && <li>{dedicatedServices[selectedServiceIndex].item3}</li>}
+              {dedicatedServices[selectedServiceIndex].item4 && <li>{dedicatedServices[selectedServiceIndex].item4}</li>}
+              {dedicatedServices[selectedServiceIndex].item5 && <li>{dedicatedServices[selectedServiceIndex].item5}</li>}
             </ul>
           </>
         )}

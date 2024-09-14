@@ -1,37 +1,11 @@
+"use client";
 import React from "react";
 import AnimatedLineDiv from "../AnimatedLineDiv";
+import { Reason } from "../../utils/interface";
+import data from "../../../public/data.json"; // Import JSON data
 
 const WhyWeLoveItHere = () => {
-  const reasons = [
-    {
-      id: 1,
-      title: "Work with brands",
-      description: "Collaborating with renowned brands to deliver exceptional solutions and forge lasting partnerships.",
-      icon: "👩‍💻", // Placeholder for icon
-      color: "text-teal-500",
-    },
-    {
-      id: 2,
-      title: "Learn and Grow",
-      description: "Fostering a culture of continuous learning, providing ample opportunities for professional development and personal growth.",
-      icon: "📚", // Placeholder for icon
-      color: "text-yellow-500",
-    },
-    {
-      id: 3,
-      title: "Work/Life balance",
-      description: "Nurturing a supportive environment that values work-life harmony, empowering our employees to thrive both personally and professionally.",
-      icon: "🏡", // Placeholder for icon
-      color: "text-pink-500",
-    },
-    {
-      id: 4,
-      title: "Cutting edge",
-      description: "Embracing the latest advancements in technology, we stay at the forefront of innovation to deliver state-of-the-art solutions that surpass industry standards.",
-      icon: "✂️", // Placeholder for icon
-      color: "text-teal-500",
-    },
-  ];
+  const reasons: Reason[] = data.reasons; // Access 'reasons' property
 
   return (
     <section className="py-20 bg-gray-50">
@@ -42,7 +16,7 @@ const WhyWeLoveItHere = () => {
         <AnimatedLineDiv/>
         <p className="text-lg text-gray-600 mb-10">
           We believe that our employees are our biggest strength, we cannot
-          achieve our goals if your team is not on board. That is why we put our
+          achieve our goals if our team is not on board. That is why we put our
           team first in everything.
         </p>
 

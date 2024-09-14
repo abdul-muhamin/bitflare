@@ -1,0 +1,354 @@
+
+{
+    "blogs": [
+      {
+        "id": 1,
+        "title": "Fine Tuning Open Source LLMs",
+        "author": "Muhammad",
+        "image": "/images/team.png",
+        "description": "Fine-tuning open source models like Llama 3.1...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 2,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 3,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 4,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 5,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 6,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 7,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 8,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      },
+      {
+        "id": 9,
+        "title": "Solve Problems with AI",
+        "author": "Hashir",
+        "image": "/images/team.png",
+        "description": "Solve problems, because AI is not your USP anymore...",
+        "category": "AI/ML"
+      }
+      
+    ],
+    "events": [
+      {
+        "id": 1,
+        "name": "Tech Conference 2024",
+        "date": "2024-05-12",
+        "location": "New York City",
+        "description": "A conference on the latest in tech..."
+      }
+      
+    ],
+    "projects" : [
+      { "id": 1, "src": "/images/team.png", "alt": "Project 1", "category": "Web Development", "name": "Project 1", "icon": "FiArrowRight" },
+    { "id": 2, "src": "/images/team.png", "alt": "Project 2", "category": "Web Development", "name": "Project 2", "icon": "FiArrowRight" },
+    { "id": 3, "src": "/images/team.png", "alt": "Project 3", "category": "Web Development", "name": "Project 3", "icon": "FiArrowRight" },
+    { "id": 4, "src": "/images/team.png", "alt": "Project 4", "category": "Web Development", "name": "Project 4", "icon": "FiArrowRight" },
+    { "id": 5, "src": "/images/team.png", "alt": "Project 5", "category": "Web Development", "name": "Project 5", "icon": "FiArrowRight" },
+    { "id": 6, "src": "/images/team.png", "alt": "Project 6", "category": "Web Development", "name": "Project 6", "icon": "FiArrowRight" },
+    { "id": 7, "src": "/images/team.png", "alt": "Project 7", "category": "Web Development", "name": "Project 7", "icon": "FiArrowRight" },
+    { "id": 8, "src": "/images/team.png", "alt": "Project 8", "category": "Web Development", "name": "Project 8", "icon": "FiArrowRight" }
+    ],
+    "testimonials": [
+    {
+      "name": "Willy",
+      "position": "Head of Technology",
+      "image": "/images/team.png",
+      "testimonial": "Team RipeSeed communicates well and gets the specified job completed in time. Often, they go beyond and suggest other solutions to make the final solutions better."
+    },
+    {
+      "name": "sd",
+      "position": "Head",
+      "image": "/images/team.png",
+      "testimonial": "Team RipeSeed communicates well and gets the specified job completed in time. Often, they go beyond and suggest other solutions to make the final solutions better."
+    },
+    {
+      "name": "sad",
+      "position": "Head of Technology",
+      "image": "/images/team.png",
+      "testimonial": "Team RipeSeed communicates well and gets the specified job completed in time. Often, they go beyond and suggest other solutions to make the final solutions better."
+    }
+  ],
+  "images": [
+    "/images/aws.png",
+    "/images/dj.png",
+    "/images/g.png",
+    "/images/go.png",
+    "/images/react.png",
+    "/images/qirolab.png"
+  ],
+  "recentProjects": [
+    { "id": 1, "src": "/images/team.png", "alt": "Project 1", "name": "Project 1", "icon": "FiArrowRight" },
+    { "id": 2, "src": "/images/team.png", "alt": "Project 2", "name": "Project 2", "icon": "FiArrowRight" },
+    { "id": 3, "src": "/images/team.png", "alt": "Project 3", "name": "Project 3", "icon": "FiArrowRight" },
+    { "id": 4, "src": "/images/team.png", "alt": "Project 4", "name": "Project 4", "icon": "FiArrowRight" },
+    { "id": 5, "src": "/images/team.png", "alt": "Project 5", "name": "Project 5", "icon": "FiArrowRight" },
+    { "id": 6, "src": "/images/team.png", "alt": "Project 6", "name": "Project 6", "icon": "FiArrowRight" },
+    { "id": 7, "src": "/images/team.png", "alt": "Project 7", "name": "Project 7", "icon": "FiArrowRight" },
+    { "id": 8, "src": "/images/team.png", "alt": "Project 8", "name": "Project 8", "icon": "FiArrowRight" }
+  ],
+  "industries": [
+    { "name": "Bank", "color": "green", "icon": "FaUniversity" },
+    { "name": "Education", "color": "green", "icon": "FaGraduationCap" },
+    { "name": "Entertainment", "color": "yellow", "icon": "FaPlayCircle" },
+    { "name": "Food", "color": "green", "icon": "FaUtensils" },
+    { "name": "Gaming", "color": "green", "icon": "FaGamepad" },
+    { "name": "Health", "color": "pink", "icon": "FaHeartbeat" },
+    { "name": "Real Estate", "color": "pink", "icon": "FaHome" },
+    { "name": "Sports", "color": "yellow", "icon": "FaFutbol" },
+    { "name": "Transport", "color": "yellow", "icon": "FaTruck" },
+    { "name": "Travel", "color": "pink", "icon": "FaPlane" }
+  ],
+  "featuredBlogs": [
+    {
+      "id": 1,
+      "title": "Fine tuning open source LLMs like Llama 3.1, Mistral, and Gemma - the right way!",
+      "author": "Muhammad Norais",
+      "image": "/images/team.png",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "Solve problems, because AI is not your USP anymore",
+      "author": "Hashir Baig",
+      "image": "/images/team.png",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "Using Pinecone to implement a personalized recommendations system",
+      "author": "Sidra Rasool",
+      "image": "/images/team.png",
+      "link": "#"
+    }
+  ],
+    "dedicatedServices": [{
+      "Label": "UI/UX",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "Figma",
+      "item2": "Prototyping"
+    },
+    {
+      "Label": "Cloud Services",
+      "description": "RipeSeed offers advanced Cloud Services to optimize business operations with flexibility, remote access, collaboration, data security, disaster recovery, and operational efficiency. Our experts leverage cutting-edge technologies like AWS Lambda, EC2, and S3 to build scalable, reliable cloud solutions tailored to client requirements.",
+      "item1": "AWS",
+      "item2": "Cloud Native Applications",
+      "item3": "Cloud Optimization",
+      "item4": "Architecture Design"
+    },
+    {
+      "Label": "AI/ChatGPT",
+      "description": "We provide AI and ChatGPT services using advanced technologies. Our experts create custom AI solutions, integrating machine learning, OpenAI, and ChatGPT. We train and refine models for accuracy and a seamless user experience aligned with your brand voice.",
+      "item1": "ChatBot",
+      "item2": "ChatGPT Plugins",
+      "item3": "Content Generation",
+      "item4": "Prompt Engineering"
+    },
+    {
+      "Label": "App Development",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "React Native",
+      "item2": "Firebase",
+      "item3": "Flutter"
+    },
+    {
+      "Label": "Chrome Extensions",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "ChatGPT Integration",
+      "item2": "Web Scraping"
+    },
+    {
+      "Label": "DevOps",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "CI/CD",
+      "item2": "Containerization",
+      "item3": "Automation"
+    },
+    {
+      "Label": "Game Development",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "Unity",
+      "item2": "Unreal",
+      "item3": "Game Art/Design",
+      "item4": "Game Optimization"
+    },
+    {
+      "Label": "Web Development",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "React.js",
+      "item2": "Next.js",
+      "item3": "Angular.js",
+      "item4": "Vue.js",
+      "item5": "Laravel"
+    },
+    {
+      "Label": "Automation Tools",
+      "description": "RipeSeed provides UI/UX services that prioritize engaging and intuitive user experiences. We leverage Sketch, Figma, Adobe XD, and InVision, utilizing an iterative design process and prototyping to bring your vision to life. Our collaborative approach ensures seamless, human-centric design that boosts user engagement and satisfaction.",
+      "item1": "Selenium",
+      "item2": "Python"
+    }
+    ],
+
+   "processData": [
+    {
+    "title": "Idea",
+    "icon": "FaLightbulb",
+    "description": "Idea phase"
+  },
+  {
+    "title": "Blueprint",
+    "icon": "FaFileAlt",
+    "description": "Blueprint phase"
+  },
+  {
+    "title": "Design",
+    "icon": "FaPencilRuler",
+    "description": "Design phase"
+  },
+  {
+    "title": "Development",
+    "icon": "FaCode",
+    "description": "Development phase"
+  },
+  {
+    "title": "Testing",
+    "icon": "FaClipboardCheck",
+    "description": "Testing phase"
+  },
+  {
+    "title": "Launch",
+    "icon": "FaRocket",
+    "description": "Launch phase"
+  }
+   ],"stats": [
+    { "id": 1, "label": "Dedicated professionals", "value": "25+", "icon": "👩‍💻", "color": "text-yellow-500" },
+    { "id": 2, "label": "Countries Served", "value": "12+", "icon": "🌍", "color": "text-teal-500" },
+    { "id": 3, "label": "Delivered Projects", "value": "260+", "icon": "📊", "color": "text-pink-500" },
+    { "id": 4, "label": "Years of experience", "value": "2+", "icon": "📅", "color": "text-teal-500" },
+    { "id": 5, "label": "Repeat Client-Ratio", "value": "15+", "icon": "🔄", "color": "text-pink-500" },
+    { "id": 6, "label": "Startups we worked with", "value": "10+", "icon": "🤝", "color": "text-yellow-500" }
+  ],
+  "teamMembers": [
+    { "name": "Abdul Wahab", "role": "Software Engineer", "category": "Software Engineer", "image": "/images/team.png" },
+    { "name": "Adeel Ahmed", "role": "Associate Software Engineer", "category": "Software Engineer", "image": "/images/team.png" },
+    { "name": "Adnan Ali", "role": "Associate Software Engineer", "category": "Software Engineer", "image": "/images/team.png" },
+    { "name": "Ahsan Abdullah", "role": "Sales Development Executive", "category": "Business Developer", "image": "/images/team.png" },
+    { "name": "Aimen Nadeem", "role": "HR Assistant", "category": "HR Manager", "image": "/images/team.png" }
+  ],
+  "executiveMember": [{
+    "name": "Mirza Hashir Baig",
+    "role": "Chief Executive Officer",
+    "description": "Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients. Led by our CEO, Mirza Hashir Baig who himself is a Cloud genius and a tech enthusiast, together the team has the capabilities to bring together unique and efficient solutions to your technical needs.",
+    "image": "/path-to-image.jpg"
+  }],
+  "reasons": [ {
+    "id": 1,
+    "title": "Work with brands",
+    "description": "Collaborating with renowned brands to deliver exceptional solutions and forge lasting partnerships.",
+    "icon": "👩‍💻",
+    "color": "text-teal-500"
+  },
+  {
+    "id": 2,
+    "title": "Learn and Grow",
+    "description": "Fostering a culture of continuous learning, providing ample opportunities for professional development and personal growth.",
+    "icon": "📚",
+    "color": "text-yellow-500"
+  },
+  {
+    "id": 3,
+    "title": "Work/Life balance",
+    "description": "Nurturing a supportive environment that values work-life harmony, empowering our employees to thrive both personally and professionally.",
+    "icon": "🏡",
+    "color": "text-pink-500"
+  },
+  {
+    "id": 4,
+    "title": "Cutting edge",
+    "description": "Embracing the latest advancements in technology, we stay at the forefront of innovation to deliver state-of-the-art solutions that surpass industry standards.",
+    "icon": "✂️",
+    "color": "text-teal-500"
+  }
+],
+"perksData": [
+  {
+    "id": 1,
+    "title": "When good work is done, we are the first to appreciate it.",
+    "imgSrc": "/images/team.png"
+  },
+  {
+    "id": 2,
+    "title": "Excellent career growth and get an opportunity to work with experts.",
+    "imgSrc": "/images/team.png"
+  },
+  {
+    "id": 3,
+    "title": "Flexible working hours and even work from home in some cases.",
+    "imgSrc": "/images/team.png"
+  },
+  {
+    "id": 4,
+    "title": "Benefits of Insurance, Snacks Bar, and a fitness club.",
+    "imgSrc": "/images/team.png"
+  },
+  {
+    "id": 5,
+    "title": "We have lots of fun and entertainment by doing sports, dinners and hangouts.",
+    "imgSrc": "/images/team.png"
+  },
+  {
+    "id": 6,
+    "title": "A Cool and Calm environment so that you can do what you do best.",
+    "imgSrc": "/images/team.png"
+  }
+]
+  
+  
+  }
+  

@@ -1,29 +1,18 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from 'react';
 import AnimatedLineDiv from './AnimatedLineDiv';
-const FeaturedBlogs = () => {
-  const blogs = [
-    {
-      id: 1,
-      title: "Fine tuning open source LLMs like Llama 3.1, Mistral, and Gemma - the right way!",
-      author: "Muhammad Norais",
-      image: "/images/team.png",
-      link: "#",
-    },
-    {
-      id: 2,
-      title: "Solve problems, because AI is not your USP anymore",
-      author: "Hashir Baig",
-      image: "/images/team.png",
-      link: "#",
-    },
-    {
-      id: 3,
-      title: "Using Pinecone to implement a personalized recommendations system",
-      author: "Sidra Rasool",
-      image: "/images/team.png",
-      link: "#",
-    },
-  ];
+import { featuredBlog } from '../utils/interface'; // Import the Blog interface
+
+const FeaturedBlogs: React.FC = () => {
+  const [blogs, setBlogs] = useState<featuredBlog[]>([]);
+
+  useEffect(() => {
+    // Fetch the blogs data from the public data.json file
+    fetch('/data.json')
+      .then((response) => response.json())
+      .then((data) => setBlogs(data.featuredBlogs))
+      .catch((err) => console.error('Error fetching blogs:', err));
+  }, []);
 
   return (
     <div className="bg-white py-16 px-10">
@@ -32,8 +21,9 @@ const FeaturedBlogs = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Our Featured Blogs
         </h2>
-        <div className='flex justify-start items-center mt-1 mb-4'>
-          <AnimatedLineDiv/></div>
+        <div className="flex justify-start items-center mt-1 mb-4">
+          <AnimatedLineDiv />
+        </div>
         <p className="text-gray-600 mb-8">
           Want to know about the latest technology trends? You can find all of them here.
         </p>
@@ -42,7 +32,11 @@ const FeaturedBlogs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog) => (
             <div key={blog.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out" />
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
+              />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800">{blog.title}</h3>
                 <p className="text-blue-500 mt-2">By {blog.author}</p>

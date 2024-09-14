@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import NavbarLinks from "@/utils/navbarLinks";
 import { FaPhone } from 'react-icons/fa';
+import { PopupWidget } from 'react-calendly';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
+  const calendlyUrl = 'https://calendly.com/rehany7xa';
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -19,6 +21,8 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+ 
 
   return (
     <nav
@@ -81,10 +85,13 @@ export default function Navbar() {
             
           </div>
           <div className="flex items-center text-[#00a884] p-4 border rounded-full">
-          <FaPhone className="text-2xl"/>
+          <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+              <FaPhone className="text-2xl"/>
+            </a>
           </div>
         </div>
       </div>
+     
 
       {/* Mobile Menu */}
       {isMenuOpen && (
@@ -107,11 +114,13 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="flex flex-row justify-around items-center gap-1 mt-5">
-        <button className=" w-1/2 p-2 text-white bg-pink-500 hover:bg-pink-600 font-bold rounded align-middle">
+        <button className=" w-1/2 p-2 text-white bg-pink-500 font-bold rounded align-middle">
           Request a quote
         </button>
-        <button className="w-1/2 p-2 text-white bg-green-600 hover:bg-green-700 font-bold rounded align-middle">
-          Book a meeting
+        <button className="w-1/2 p-2 text-white bg-green hover:bg-green font-bold rounded align-middle">
+        <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+              Book a meeting
+            </a>
         </button>
       </div>
         </div>

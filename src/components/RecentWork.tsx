@@ -1,18 +1,19 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from 'react';
 import AnimatedLineDiv from './AnimatedLineDiv';
 import { FiArrowRight } from 'react-icons/fi';
+import { Project } from '../utils/interface'; // Import the Project interface
 
-const RecentWork = () => {
-  const projects = [
-    { id: 1, src: "/images/team.png", alt: "Project 1", name: "Project 1", icon: <FiArrowRight /> },
-    { id: 2, src: "/images/team.png", alt: "Project 2", name: "Project 2", icon: <FiArrowRight /> },
-    { id: 3, src: "/images/team.png", alt: "Project 3", name: "Project 3", icon: <FiArrowRight /> },
-    { id: 4, src: "/images/team.png", alt: "Project 4", name: "Project 4", icon: <FiArrowRight /> },
-    { id: 5, src: "/images/team.png", alt: "Project 5", name: "Project 5", icon: <FiArrowRight /> },
-    { id: 6, src: "/images/team.png", alt: "Project 6", name: "Project 6", icon: <FiArrowRight /> },
-    { id: 7, src: "/images/team.png", alt: "Project 7", name: "Project 7", icon: <FiArrowRight /> },
-    { id: 8, src: "/images/team.png", alt: "Project 8", name: "Project 8", icon: <FiArrowRight /> }
-  ];
+const RecentWork: React.FC = () => {
+  const [recentProjects, setRecentProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetch('/data.json') // Fetch data from the public folder
+      .then(response => response.json())
+      .then(data => data.recentProjects)
+      .then(data => setRecentProjects(data))
+      .catch(err => console.error('Error fetching projects:', err));
+  }, []);
 
   return (
     <div className="bg-white py-16 px-12 lg:px-20">
@@ -30,7 +31,7 @@ const RecentWork = () => {
 
         {/* Project Images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-4">
-          {projects.map((project) => (
+          {recentProjects.map((project) => (
             <div key={project.id} className="relative overflow-hidden rounded-lg shadow-lg">
               <img
                 src={project.src}
@@ -40,7 +41,7 @@ const RecentWork = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-70 transition-opacity duration-300 flex items-end p-4">
                 <div className="flex w-full justify-between items-center">
                   <span className="text-white text-3xl font-normal">{project.name}</span>
-                  <div className="text-white text-3xl border rounded-full p-2">{project.icon}</div>
+                  <div className="text-white text-3xl border rounded-full p-2"><FiArrowRight /></div>
                 </div>
               </div>
             </div>

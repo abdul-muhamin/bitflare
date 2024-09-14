@@ -1,13 +1,8 @@
+// /src/components/AnimatedLineDiv.tsx
 "use client";
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-
-interface AnimatedLineDivProps {
-  colors?: string[];  // Optional: allows customizing the colors
-  duration?: number;  // Optional: allows customizing the animation duration
-  width?: string;     // Optional: allows customizing the width
-  height?: string;    // Optional: allows customizing the height
-}
+import { AnimatedLineDivProps } from "../utils/interface"; // Import interface
 
 const AnimatedLineDiv: React.FC<AnimatedLineDivProps> = ({
   colors = ["yellow", "red", "green"],
@@ -18,7 +13,6 @@ const AnimatedLineDiv: React.FC<AnimatedLineDivProps> = ({
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const sectionRef = useRef<HTMLDivElement | null>(null); // Using a ref for each section
 
-  // Function to check if the element is in the viewport
   const handleScroll = () => {
     const section = sectionRef.current;
     if (section) {
@@ -31,13 +25,8 @@ const AnimatedLineDiv: React.FC<AnimatedLineDivProps> = ({
   };
 
   useEffect(() => {
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
-
-    // Check visibility on load
     handleScroll();
-
-    // Cleanup the event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -46,11 +35,11 @@ const AnimatedLineDiv: React.FC<AnimatedLineDivProps> = ({
   return (
     <div className={`overflow-hidden h-[2px]`}>
       <motion.div
-        ref={sectionRef} // Use ref instead of id
+        ref={sectionRef}
         className={`flex w-52 h-[2px]`}
-        initial={{ x: "-100%" }} // Start from outside the viewport
-        animate={isVisible ? { x: 0 } : { x: "-100%" }} // Move left to right when visible
-        transition={{ duration, ease: "easeInOut" }} // Adjust animation speed and easing
+        initial={{ x: "-100%" }}
+        animate={isVisible ? { x: 0 } : { x: "-100%" }}
+        transition={{ duration, ease: "easeInOut" }}
       >
         {colors.map((color, index) => (
           <motion.div

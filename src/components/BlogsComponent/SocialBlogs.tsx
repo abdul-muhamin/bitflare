@@ -1,92 +1,32 @@
 "use client";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
-interface Blog {
-  id: number;
-  title: string;
-  author: string;
-  image: string;
-  description: string;
-  category: string;
-}
+import { Blog } from '../../utils/interface'; // Adjust import path as needed
 
 const SocialBlogs: React.FC = () => {
-  const blogs: Blog[] = [
-    {
-      id: 1,
-      title: "Fine Tuning Open Source LLMs",
-      author: "Muhammad",
-      image: "/images/team.png",
-      description: "Fine-tuning open source models like Llama 3.1...",
-      category: "AI/ML",
-    },
-    {
-      id: 2,
-      title: "Solve Problems with AI",
-      author: "Hashir",
-      image: "/images/team.png",
-      description: "Solve problems, because AI is not your USP anymore...",
-      category: "AI/ML",
-    },
-    {
-      id: 3,
-      title: "Using Pinecone for Personalized Systems",
-      author: "Sidra",
-      image: "/images/team.png",
-      description: "Using Pinecone to implement a personalized recommendation system...",
-      category: "Web Development",
-    },
-    {
-        id: 4,
-        title: "Fine Tuning Open Source LLMs",
-        author: "Muhammad",
-        image: "/images/team.png",
-        description: "Fine-tuning open source models like Llama 3.1...",
-        category: "AI/ML",
-      },
-      {
-        id: 5,
-        title: "Solve Problems with AI",
-        author: "Hashir",
-        image: "/images/team.png",
-        description: "Solve problems, because AI is not your USP anymore...",
-        category: "AI/ML",
-      },
-      {
-        id: 6,
-        title: "Using Pinecone for Personalized Systems",
-        author: "Sidra",
-        image: "/images/team.png",
-        description: "Using Pinecone to implement a personalized recommendation system...",
-        category: "Web Development",
-      },
-      {
-        id: 7,
-        title: "Fine Tuning Open Source LLMs",
-        author: "Muhammad",
-        image: "/images/team.png",
-        description: "Fine-tuning open source models like Llama 3.1...",
-        category: "AI/ML",
-      },
-      {
-        id: 8,
-        title: "Solve Problems with AI",
-        author: "Hashir",
-        image: "/images/team.png",
-        description: "Solve problems, because AI is not your USP anymore...",
-        category: "AI/ML",
-      },
-      {
-        id: 9,
-        title: "Using Pinecone for Personalized Systems",
-        author: "Sidra",
-        image: "/images/team.png",
-        description: "Using Pinecone to implement a personalized recommendation system...",
-        category: "Web Development",
-      },
-    // Add more blogs...
-  ];
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/data.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setBlogs(data.blogs || []);
+      } catch (error) {
+        setError('Failed to load data');
+        console.error('Failed to fetch data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const socialLinks = [
     { name: "Facebook", icon: <FaFacebook />, link: "#" },
@@ -95,6 +35,14 @@ const SocialBlogs: React.FC = () => {
   ];
 
   const popularBlogs = blogs.slice(0, 3); // Display 3 popular blogs in sidebar
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className="container mx-auto py-36 px-10">
