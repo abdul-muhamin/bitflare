@@ -12,7 +12,21 @@ import ReusableHome from '@/utils/ReusableHome';
 const AboutUs = () => {
   return (
     <>
-    <ReusableHome Heading='ABOUT US' Paragraph='Creating beautiful digital products engineered to drive growth for the world’s leading brands.' ButtonContent='Discuss your project' />
+    {/* <ReusableHome Heading='ABOUT US' Paragraph='Creating beautiful digital products engineered to drive growth for the world’s leading brands.' ButtonContent='Discuss your project' /> */}
+    <section className="relative flex mt-24 items-left justify-left bg-background-about bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#3f3d56] to-transparent"></div>
+
+        {/* Content */}
+        <div className="text-left items-left relative z-10 px-32 py-20">
+          <h1 className="text-6xl font-bold text-white mb-4">ABOUT US</h1>
+          <p className="text-xl/10 text-white mb-8 max-w-lg">
+          Creating beautiful digital products engineered to drive growth for the world’s leading brands.
+          </p>
+          <button className="px-6 py-3 bg-teal-600 text-white font-semibold rounded-md hover:bg-teal-500 transition duration-300">
+          Discuss your project
+          </button>
+        </div>
+      </section>
     
     {/* tech */}
     <div>

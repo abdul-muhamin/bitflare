@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { navLinks } from "./navlinks";
+import Link from "next/link";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
 
 interface SubLink {
   Head: string;
+  url?: string
 }
 
 interface NavLink {
@@ -62,7 +64,13 @@ const NavbarLinks: React.FC = () => {
                       key={mysublinks.Head}
                       className="p-3 hover:bg-gray-700"
                     >
-                      <h1 className="text-lg px-4 py-4">{mysublinks.Head}</h1>
+                      <h1 className="text-lg px-4 py-4">{mysublinks.url ? (
+                          <Link href={mysublinks.url}>
+                            {mysublinks.Head}
+                          </Link>
+                        ) : (
+                          mysublinks.Head
+                        )}</h1>
                     </div>
                   ))}
                 </div>

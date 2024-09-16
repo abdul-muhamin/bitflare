@@ -61,7 +61,7 @@ export default function Navbar() {
           <ul className="flex space-x-8 text-gray-700 text-xl">
             <NavbarLinks />
             <li>
-              <Link href="/work" className="hover:text-teal-500">
+              <Link href="/ourWork" className="hover:text-teal-500">
                 Our Work
               </Link>
             </li>
@@ -71,7 +71,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-teal-500">
+              <Link href="/contactUs" className="hover:text-teal-500">
                 Contact Us
               </Link>
             </li>
@@ -98,19 +98,19 @@ export default function Navbar() {
         <div className="lg:hidden bg-gray-800 w-full px-6 py-4">
           <ul className="flex flex-col items-start space-y-4 text-white mt-4">
             <li>
-              <Link href="/company">Company</Link>
+              <Link href="">Company</Link>
             </li>
             <li>
-              <Link href="/services">Our Services</Link>
+              <Link href="">Our Services</Link>
             </li>
             <li>
-              <Link href="/work">Our Work</Link>
+              <Link href="/ourWork">Our Work</Link>
             </li>
             <li>
               <Link href="/blogs">Blogs</Link>
             </li>
             <li>
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contactUs">Contact Us</Link>
             </li>
           </ul>
           <div className="flex flex-row justify-around items-center gap-1 mt-5">
