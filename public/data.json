@@ -99,19 +99,19 @@
     {
       "name": "Willy",
       "position": "Head of Technology",
-      "image": "/images/team.png",
+      "image": "/images/testi1.png",
       "testimonial": "Team RipeSeed communicates well and gets the specified job completed in time. Often, they go beyond and suggest other solutions to make the final solutions better."
     },
     {
       "name": "sd",
       "position": "Head",
-      "image": "/images/team.png",
+      "image": "/images/testi2.png",
       "testimonial": "Team RipeSeed communicates well and gets the specified job completed in time. Often, they go beyond and suggest other solutions to make the final solutions better."
     },
     {
       "name": "sad",
       "position": "Head of Technology",
-      "image": "/images/team.png",
+      "image": "/images/test3.png",
       "testimonial": "Team RipeSeed communicates well and gets the specified job completed in time. Often, they go beyond and suggest other solutions to make the final solutions better."
     }
   ],
@@ -124,14 +124,14 @@
     "/images/qirolab.png"
   ],
   "recentProjects": [
-    { "id": 1, "src": "/images/team.png", "alt": "Project 1", "name": "Project 1", "icon": "FiArrowRight" },
-    { "id": 2, "src": "/images/team.png", "alt": "Project 2", "name": "Project 2", "icon": "FiArrowRight" },
-    { "id": 3, "src": "/images/team.png", "alt": "Project 3", "name": "Project 3", "icon": "FiArrowRight" },
-    { "id": 4, "src": "/images/team.png", "alt": "Project 4", "name": "Project 4", "icon": "FiArrowRight" },
-    { "id": 5, "src": "/images/team.png", "alt": "Project 5", "name": "Project 5", "icon": "FiArrowRight" },
-    { "id": 6, "src": "/images/team.png", "alt": "Project 6", "name": "Project 6", "icon": "FiArrowRight" },
-    { "id": 7, "src": "/images/team.png", "alt": "Project 7", "name": "Project 7", "icon": "FiArrowRight" },
-    { "id": 8, "src": "/images/team.png", "alt": "Project 8", "name": "Project 8", "icon": "FiArrowRight" }
+    { "id": 1, "src": "/images/webprojects.png", "alt": "Project 1", "name": "Project 1", "icon": "FiArrowRight" },
+    { "id": 2, "src": "/images/webprojects2.png", "alt": "Project 2", "name": "Project 2", "icon": "FiArrowRight" },
+    { "id": 3, "src": "/images/webprojects3.png", "alt": "Project 3", "name": "Project 3", "icon": "FiArrowRight" },
+    { "id": 4, "src": "/images/webprojects4.png", "alt": "Project 4", "name": "Project 4", "icon": "FiArrowRight" },
+    { "id": 5, "src": "/images/webprojects5.png", "alt": "Project 5", "name": "Project 5", "icon": "FiArrowRight" },
+    { "id": 6, "src": "/images/webprojects6.png", "alt": "Project 6", "name": "Project 6", "icon": "FiArrowRight" },
+    { "id": 7, "src": "/images/webprojects.png", "alt": "Project 7", "name": "Project 7", "icon": "FiArrowRight" },
+    { "id": 8, "src": "/images/webprojects3.png", "alt": "Project 8", "name": "Project 8", "icon": "FiArrowRight" }
   ],
   "industries": [
     { "name": "Bank", "color": "green", "icon": "FaUniversity" },
@@ -150,21 +150,21 @@
       "id": 1,
       "title": "Fine tuning open source LLMs like Llama 3.1, Mistral, and Gemma - the right way!",
       "author": "Muhammad Norais",
-      "image": "/images/team.png",
+      "image": "/images/blog1.png",
       "link": "#"
     },
     {
       "id": 2,
       "title": "Solve problems, because AI is not your USP anymore",
       "author": "Hashir Baig",
-      "image": "/images/team.png",
+      "image": "/images/blog2.png",
       "link": "#"
     },
     {
       "id": 3,
       "title": "Using Pinecone to implement a personalized recommendations system",
       "author": "Sidra Rasool",
-      "image": "/images/team.png",
+      "image": "/images/blog3.png",
       "link": "#"
     }
   ],

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { Project } from '../../utils/interface'; // Adjust the import path as needed
-
+import Link from 'next/link';
 const ContactProjects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   
@@ -65,9 +65,10 @@ const ContactProjects: React.FC = () => {
 
         {/* View All Work Button */}
         <div className="mt-8 text-center">
+          <Link href={'/ourWork'}>
           <button className="bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">
             View all work
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

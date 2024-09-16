@@ -68,13 +68,13 @@ const Testimonial = () => {
           {/* Navigation Buttons */}
           <button
             onClick={handlePrev}
-            className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 text-slate-200 text-xl bg-slate-300 rounded-full flex items-center justify-center"
+            className="hidden lg:flex absolute left-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 text-slate-200 text-xl bg-slate-300 rounded-full  items-center justify-center"
           >
             &lt;
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 text-slate-200 text-xl bg-slate-300 rounded-full flex items-center justify-center"
+            className="hidden lg:flex absolute right-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 text-slate-200 text-xl bg-slate-300 rounded-full items-center justify-center"
           >
             &gt;
           </button>
