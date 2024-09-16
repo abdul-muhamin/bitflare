@@ -5,7 +5,7 @@ import AnimatedLineDiv from './AnimatedLineDiv';
 import data from "../../public/data.json"; // Import the entire data JSON
 
 export default function DedicatedServices() {
-  const [selectedServiceIndex, setSelectedServiceIndex] = useState<number | null>(null);
+  const [selectedServiceIndex, setSelectedServiceIndex] = useState<number | null>(0);
   const [isMobileView, setIsMobileView] = useState(false);
 
   // Extract dedicatedServices from the JSON data

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AchievementsSection() {
   return (
-    <div className="bg-gray-800 text-white py-12">
+    <div className="bg-[#3f3d56] text-white py-12">
       <div className="container mx-auto flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
         
         {/* First Achievement */}

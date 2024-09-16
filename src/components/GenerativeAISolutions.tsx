@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 export default function GenerativeAISolutions() {
   return (
     <div className=' text-white p-8 lg:p-8  bg-generative bg-no-repeat bg-cover bg-center'>
@@ -13,7 +13,8 @@ export default function GenerativeAISolutions() {
           <li>🔄 Automations</li>
         </ul>
         <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:mb-0">
-          <button className="bg-yellow-500 text-black px-7 py-3 rounded-lg w-full lg:w-auto lg:text-lg">See our work</button>
+          <Link href = {"./ourWork"}>
+          <button className="bg-yellow text-black px-7 py-3 rounded-lg w-full lg:w-auto lg:text-lg">See our work</button></Link>
           <button className="bg-transparent border-2 border-white px-8 py-3 rounded-lg w-full lg:w-auto lg:text-lg">Discuss your project</button>
         </div>
       </div>

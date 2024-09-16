@@ -20,8 +20,12 @@ export default function Home() {
       <DedicatedServices/>
       <FeaturedBlogs/>
       <Testimonial/>
-      <TechImages/>
+      <div className="relative bottom-20">
+      <TechImages />
+      </div>
+
       <ContactForm/>
+ 
     </main>
   );
 }

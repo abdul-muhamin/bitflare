@@ -33,7 +33,8 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center px-4 md:px-10 font-normal transition-all">
         {/* Logo */}
         <div className="text-3xl font-[500] text-teal-600">
-          ripeseed<span className="text-orange-500">.io</span>
+          <Link href={'/'} >
+          ripeseed<span className="text-orange-500">.io</span></Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -84,9 +85,9 @@ export default function Navbar() {
             </button>
             
           </div>
-          <div className="flex items-center text-[#00a884] p-4 border rounded-full">
+          <div className="flex items-center text-[#00a884] p-4 border-2 rounded-full shadow-lg">
           <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
-              <FaPhone className="text-2xl"/>
+              <FaPhone style={{ transform: 'scaleX(-1)' }} className="text-2xl "/>
             </a>
           </div>
         </div>

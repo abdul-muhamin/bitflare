@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import AnimatedLineDiv from './AnimatedLineDiv';
+import Link from 'next/link';
 import { featuredBlog } from '../utils/interface'; // Import the Blog interface
 
 const FeaturedBlogs: React.FC = () => {
@@ -48,7 +49,9 @@ const FeaturedBlogs: React.FC = () => {
         {/* View All Articles Button */}
         <div className="mt-8 text-center">
           <button className="bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">
+            <Link href={"/blogs"}>
             View all articles
+            </Link>
           </button>
         </div>
       </div>
