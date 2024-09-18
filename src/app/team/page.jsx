@@ -14,8 +14,9 @@ const team = () => {
     <>
 <ReusableHome Heading= {"OUR TEAM"} Paragraph ={"Meet our team of engineers, thinkers, creators, designers, and world class problem solvers."  } ButtonContent={'Discuss your project'} />
     
-
-<Technologies/>
+<div className='relative bottom-16'>
+      <Technologies/>
+      </div>
 
  {/* how we are */}
  <div className="bg-white py-12 px-6 lg:py-16 lg:px-20">
@@ -39,15 +40,15 @@ const team = () => {
   </button>
         </div>
         <div className="lg:w-1/2 flex flex-col items-center lg:pl-16 lg:order-2">
-          <div className="mb-4 relative w-40 h-40 lg:w-64 lg:h-64">
+        <div className="mb-4 relative w-60 h-40 lg:w-[400px] lg:h-[300px] border-4 border-white">
             <Image src="/images/team.png" alt="Team Photo" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/>
-            <div className="absolute top-4 left-4 bg-green-500 text-white px-4 py-2  text-center text-lg ">30+ <br /> worldwide clients</div>
+            <div className="absolute p-1 font-light  top-[-30px] left-[-30px] bg-green text-white lg:font-normal lg:px-2 lg:py-2   text-center text-lg ">30+ <br /> worldwide clients</div>
           </div>
           <div className="flex space-x-4">
-            <div className="w-32 h-32 lg:w-48 lg:h-48 relative">
+            <div className="w-32 h-32 lg:w-48 lg:h-32 relative right-[50px] top-[-60px] lg:right-[80px] border-4 border-white">
               <Image src="/images/team2.png" alt="Team Working" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/>
             </div>
-            <div className="w-32 h-32 lg:w-48 lg:h-48 relative">
+            <div className="w-44 h-32 lg:w-52 lg:h-44 relative top-[-40px] left-[40px] border-4 border-white">
               <Image src="/images/team3.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/>
             </div>
           </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
 import AnimatedLineDiv from './AnimatedLineDiv';
 import Link from 'next/link';
@@ -19,9 +19,7 @@ const FeaturedBlogs: React.FC = () => {
     <div className="bg-white py-16 px-10">
       <div className="container mx-auto px-6">
         {/* Section Heading */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Our Featured Blogs
-        </h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Featured Blogs</h2>
         <div className="flex justify-start items-center mt-1 mb-4">
           <AnimatedLineDiv />
         </div>
@@ -32,27 +30,29 @@ const FeaturedBlogs: React.FC = () => {
         {/* Blog Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog) => (
-            <div key={blog.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
-              />
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-800">{blog.title}</h3>
-                <p className="text-blue-500 mt-2">By {blog.author}</p>
+            <Link key={blog.id} href={blog.link} passHref>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-48 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
+                />
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-800">{blog.title}</h3>
+                  <p className="text-blue-500 mt-2">By {blog.author}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         {/* View All Articles Button */}
         <div className="mt-8 text-center">
-          <button className="bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">
-            <Link href={"/blogs"}>
-            View all articles
-            </Link>
-          </button>
+          <Link href="/blogs">
+            <button className="bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">
+              View all articles
+            </button>
+          </Link>
         </div>
       </div>
     </div>

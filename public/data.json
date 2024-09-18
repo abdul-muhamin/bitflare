@@ -5,25 +5,29 @@
         "id": 1,
         "title": "Fine Tuning Open Source LLMs",
         "author": "Muhammad",
-        "image": "/images/team.png",
+        "image": "/images/blog1.png",
         "description": "Fine-tuning open source models like Llama 3.1...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/fine-tuning-open-source-llm-llama-3-mistral-and-gemma"
+
       },
       {
         "id": 2,
         "title": "Solve Problems with AI",
         "author": "Hashir",
-        "image": "/images/team.png",
+        "image": "/images/blog3.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/solve-problems-because-ai-is-not-your-usp-anymore"
       },
       {
         "id": 3,
         "title": "Solve Problems with AI",
         "author": "Hashir",
-        "image": "/images/team.png",
+        "image": "/images/blog2.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/using-pinecone-to-implement-a-personalized-recommendations-system"
       },
       {
         "id": 4,
@@ -31,39 +35,44 @@
         "author": "Hashir",
         "image": "/images/team.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/unlocking-the-seo-potential-in-react-with-next-js-a-comprehensive-guide"
       },
       {
         "id": 5,
         "title": "Solve Problems with AI",
         "author": "Hashir",
-        "image": "/images/team.png",
+        "image": "/images/webprojects.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/dev-your-first-v3-chrome-extension-a-step-by-step-guide"
       },
       {
         "id": 6,
         "title": "Solve Problems with AI",
         "author": "Hashir",
-        "image": "/images/team.png",
+        "image": "/images/webprojects2.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/translating-languages-using-py-torch-transformers"
       },
       {
         "id": 7,
         "title": "Solve Problems with AI",
         "author": "Hashir",
-        "image": "/images/team.png",
+        "image": "/images/webprojects3.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/ultimate-guide-to-elastic-beanstalk-deployments-with-real-world-example"
       },
       {
         "id": 8,
         "title": "Solve Problems with AI",
         "author": "Hashir",
-        "image": "/images/team.png",
+        "image": "/images/webprojects4.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "/blog/reactflow-for-supply-chain-visualisation-a-technical-guide"
       },
       {
         "id": 9,
@@ -71,7 +80,8 @@
         "author": "Hashir",
         "image": "/images/team.png",
         "description": "Solve problems, because AI is not your USP anymore...",
-        "category": "AI/ML"
+        "category": "AI/ML",
+        "url" : "using-pinecone-to-implement-a-personalized-recommendations-system"
       }
       
     ],
@@ -86,14 +96,14 @@
       
     ],
     "projects" : [
-      { "id": 1, "src": "/images/team.png", "alt": "Project 1", "category": "Web Development", "name": "Project 1", "icon": "FiArrowRight" },
-    { "id": 2, "src": "/images/team.png", "alt": "Project 2", "category": "Web Development", "name": "Project 2", "icon": "FiArrowRight" },
-    { "id": 3, "src": "/images/team.png", "alt": "Project 3", "category": "Web Development", "name": "Project 3", "icon": "FiArrowRight" },
-    { "id": 4, "src": "/images/team.png", "alt": "Project 4", "category": "Web Development", "name": "Project 4", "icon": "FiArrowRight" },
-    { "id": 5, "src": "/images/team.png", "alt": "Project 5", "category": "Web Development", "name": "Project 5", "icon": "FiArrowRight" },
-    { "id": 6, "src": "/images/team.png", "alt": "Project 6", "category": "Web Development", "name": "Project 6", "icon": "FiArrowRight" },
-    { "id": 7, "src": "/images/team.png", "alt": "Project 7", "category": "Web Development", "name": "Project 7", "icon": "FiArrowRight" },
-    { "id": 8, "src": "/images/team.png", "alt": "Project 8", "category": "Web Development", "name": "Project 8", "icon": "FiArrowRight" }
+      { "id": 1, "src": "/images/webprojects.png", "alt": "Project 1", "category": "Web Development", "name": "Project 1", "icon": "FiArrowRight","url" : "/project/BetaCarbon" },
+    { "id": 2, "src": "/images/webprojects2.png", "alt": "Project 2", "category": "AI/ChatGPT", "name": "Project 2", "icon": "FiArrowRight","url" : "/project/AppointmentCore"  },
+    { "id": 3, "src": "/images/webprojects3.png", "alt": "Project 3", "category": "Chrome Extensions", "name": "Project 3", "icon": "FiArrowRight","url" : "/project/Satoshi-Index" },
+    { "id": 4, "src": "/images/webprojects4.png", "alt": "Project 4", "category": "Chrome Extensions", "name": "Project 4", "icon": "FiArrowRight","url" : "/project/GoPerla" },
+    { "id": 5, "src": "/images/webprojects5.png", "alt": "Project 5", "category": "Game Development", "name": "Project 5", "icon": "FiArrowRight","url" : "/project/CloudFence" },
+    { "id": 6, "src": "/images/webprojects6.png", "alt": "Project 6", "category": "AI/ChatGPT", "name": "Project 6", "icon": "FiArrowRight","url" : "/project/SuperReply" },
+    { "id": 7, "src": "/images/webprojects.png", "alt": "Project 7", "category": "Web Development", "name": "Project 7", "icon": "FiArrowRight" ,"url" : "/project/Steven-Stone"},
+    { "id": 8, "src": "/images/webprojects2.png", "alt": "Project 8", "category": "AI/ChatGPT", "name": "Project 8", "icon": "FiArrowRight","url" : "/project/Vivere-Emmy" }
     ],
     "testimonials": [
     {
@@ -124,15 +134,20 @@
     "/images/qirolab.png"
   ],
   "recentProjects": [
-    { "id": 1, "src": "/images/webprojects.png", "alt": "Project 1", "name": "Project 1", "icon": "FiArrowRight" },
-    { "id": 2, "src": "/images/webprojects2.png", "alt": "Project 2", "name": "Project 2", "icon": "FiArrowRight" },
-    { "id": 3, "src": "/images/webprojects3.png", "alt": "Project 3", "name": "Project 3", "icon": "FiArrowRight" },
-    { "id": 4, "src": "/images/webprojects4.png", "alt": "Project 4", "name": "Project 4", "icon": "FiArrowRight" },
-    { "id": 5, "src": "/images/webprojects5.png", "alt": "Project 5", "name": "Project 5", "icon": "FiArrowRight" },
-    { "id": 6, "src": "/images/webprojects6.png", "alt": "Project 6", "name": "Project 6", "icon": "FiArrowRight" },
-    { "id": 7, "src": "/images/webprojects.png", "alt": "Project 7", "name": "Project 7", "icon": "FiArrowRight" },
-    { "id": 8, "src": "/images/webprojects3.png", "alt": "Project 8", "name": "Project 8", "icon": "FiArrowRight" }
+    { "id": 1, "src": "/images/webprojects.png", "alt": "Project 1", "name": "Project 1", "icon": "FiArrowRight" , "url" : "/project/BetaCarbon"},
+    { "id": 2, "src": "/images/webprojects2.png", "alt": "Project 2", "name": "Project 2", "icon": "FiArrowRight", "url" : "/project/AppointmentCore" },
+    { "id": 3, "src": "/images/webprojects3.png", "alt": "Project 3", "name": "Project 3", "icon": "FiArrowRight", "url" : "/project/Satoshi-Index" },
+    { "id": 4, "src": "/images/webprojects4.png", "alt": "Project 4", "name": "Project 4", "icon": "FiArrowRight" , "url" : "/project/GoPerla"},
+    { "id": 5, "src": "/images/webprojects5.png", "alt": "Project 5", "name": "Project 5", "icon": "FiArrowRight" , "url" : "/project/CloudFence"},
+    { "id": 6, "src": "/images/webprojects6.png", "alt": "Project 6", "name": "Project 6", "icon": "FiArrowRight" , "url" : "/project/SuperReply"},
+    { "id": 7, "src": "/images/webprojects.png", "alt": "Project 7", "name": "Project 7", "icon": "FiArrowRight" , "url" : "/project/Steven-Stone"},
+    { "id": 8, "src": "/images/webprojects3.png", "alt": "Project 8", "name": "Project 8", "icon": "FiArrowRight" , "url" : "/project/Vivere-Emmy"}
   ],
+  
+  "servicesProjects": [
+    { "id": 1, "src": "/images/webprojects.png", "alt": "Project 1", "name": "Project 1", "icon": "FiArrowRight" , "url" : "/project/BetaCarbon"},
+    { "id": 2, "src": "/images/webprojects2.png", "alt": "Project 2", "name": "Project 2", "icon": "FiArrowRight", "url" : "/project/AppointmentCore" },
+    { "id": 3, "src": "/images/webprojects3.png", "alt": "Project 3", "name": "Project 3", "icon": "FiArrowRight", "url" : "/project/Satoshi-Index" }],
   "industries": [
     { "name": "Bank", "color": "green", "icon": "FaUniversity" },
     { "name": "Education", "color": "green", "icon": "FaGraduationCap" },
@@ -151,21 +166,21 @@
       "title": "Fine tuning open source LLMs like Llama 3.1, Mistral, and Gemma - the right way!",
       "author": "Muhammad Norais",
       "image": "/images/blog1.png",
-      "link": "#"
+      "link": "/blog/fine-tuning-open-source-llm-llama-3-mistral-and-gemma"
     },
     {
       "id": 2,
       "title": "Solve problems, because AI is not your USP anymore",
       "author": "Hashir Baig",
       "image": "/images/blog2.png",
-      "link": "#"
+      "link": "/blog/solve-problems-because-ai-is-not-your-usp-anymore"
     },
     {
       "id": 3,
       "title": "Using Pinecone to implement a personalized recommendations system",
       "author": "Sidra Rasool",
       "image": "/images/blog3.png",
-      "link": "#"
+      "link": "/blog/using-pinecone-to-implement-a-personalized-recommendations-system"
     }
   ],
     "dedicatedServices": [{
@@ -285,7 +300,7 @@
     "name": "Mirza Hashir Baig",
     "role": "Chief Executive Officer",
     "description": "Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients. Led by our CEO, Mirza Hashir Baig who himself is a Cloud genius and a tech enthusiast, together the team has the capabilities to bring together unique and efficient solutions to your technical needs.",
-    "image": "/path-to-image.jpg"
+    "image": "/images/people1.png"
   }],
   "reasons": [ {
     "id": 1,

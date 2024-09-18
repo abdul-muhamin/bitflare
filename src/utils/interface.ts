@@ -6,6 +6,7 @@ export interface Blog {
     image: string;
     description: string;
     category: string;
+    url: string
   }
   
   export interface Event {
@@ -22,9 +23,10 @@ export interface Project {
     id: number;
     src: string;
     alt: string;
-    category: string;
+    category?: string;
     name: string;
-    icon: string; // Use the string name of the icon component
+    icon: string;
+    url: string // Use the string name of the icon component
   }
 
 // end

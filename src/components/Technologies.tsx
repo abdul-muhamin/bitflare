@@ -17,7 +17,7 @@ const TestimonialCarousel: React.FC = () => {
     <div className="relative overflow-hidden w-[80%] m-auto bg-gray-100 shadow-lg">
       <div className="hidden md:flex justify-start align-middle animate-scroll">
         {images.concat(images).map((src, index) => (
-          <div key={index} className="flex-none mx-10 self-center py-10">
+          <div key={index} className="flex-none mx-10 self-center py-5">
             <img
               src={src}
               alt={`Image ${index + 1}`}

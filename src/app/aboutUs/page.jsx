@@ -12,7 +12,7 @@ import ReusableHome from '@/utils/ReusableHome';
 const AboutUs = () => {
   return (
     <>
-    {/* <ReusableHome Heading='ABOUT US' Paragraph='Creating beautiful digital products engineered to drive growth for the world’s leading brands.' ButtonContent='Discuss your project' /> */}
+    
     <section className="relative flex mt-24 items-left justify-left bg-background-about bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-r from-[#3f3d56] to-transparent"></div>
 
@@ -29,7 +29,7 @@ const AboutUs = () => {
       </section>
     
     {/* tech */}
-    <div>
+    <div className='relative bottom-16'>
       <Technologies/>
       </div>
 

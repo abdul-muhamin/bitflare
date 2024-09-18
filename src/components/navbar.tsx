@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-white border fixed top-0 left-0 w-full z-50 transition-transform ${
+      className={`bg-white border-b relative top-0 left-0 w-full z-50 transition-transform ${
         scrolling ? "py-2" : "py-5"
       }`}
     >
@@ -80,9 +80,10 @@ export default function Navbar() {
 
           {/* Request a Quote Button */}
           <div className="flex items-center">
+          <Link href={"/requestQuote"}>
             <button className="bg-[#ff6584] text-white py-3 px-4 rounded-md  transition">
               Request a quote
-            </button>
+            </button></Link>
             
           </div>
           <div className="flex items-center text-[#00a884] p-4 border-2 rounded-full shadow-lg">

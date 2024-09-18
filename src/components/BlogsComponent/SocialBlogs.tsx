@@ -93,7 +93,7 @@ const SocialBlogs: React.FC = () => {
         <section className="lg:col-span-3">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogs.map((blog) => (
-              <div key={blog.id} className="border rounded-lg shadow-md overflow-hidden">
+              <a key={blog.id} href={blog.url} className="border rounded-lg shadow-md overflow-hidden">
                 {/* Using img instead of next/image */}
                 <div className="overflow-hidden">
                   <img
@@ -107,7 +107,7 @@ const SocialBlogs: React.FC = () => {
                   <p className="text-sm mt-2 text-gray-700">{blog.description}</p>
                   <p className="text-lg text-blue-500">By {blog.author}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>

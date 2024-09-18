@@ -54,7 +54,7 @@ const Home: React.FC = () => {
       {/* Main Content */}
       <div className="relative z-10 flex flex-row items-center justify-center">
         <div className="text-center lg:text-start px-4 lg:mt-32">
-          <h1 className="text-3xl text-black leading-[2] font-bold mb-4 lg:text-6xl  lg:text-start max-w-[65rem]">
+          <h1 className="text-3xl text-black leading-1 lg:leading-[1.05] font-bold mb-4 lg:text-6xl  lg:text-start max-w-[65rem]">
             TRANSFORMING IDEAS INTO INNOVATIVE<span className="text-yellow"> SOFTWARE SOLUTIONS</span>
           </h1>
           <p className="text-gray-600 my-12 lg:w-[30rem] font-normal">

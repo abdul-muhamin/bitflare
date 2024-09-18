@@ -45,7 +45,7 @@ const IndustriesWeServe: React.FC = () => {
         {industries.map((industry, index) => (
           <div
             key={index}
-            className="industries-box flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md transition duration-300 border-4 border-transparent"
+            className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md transition duration-300 border-4 border-transparent hover:border-green "
           >
             {/* Render the icon with a larger size */}
             <div className="text-6xl mb-4 text-center" style={{ color: industry.color }}>

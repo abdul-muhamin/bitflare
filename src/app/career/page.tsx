@@ -13,7 +13,9 @@ const career = () => {
     <ReusableHome Heading='CAREER' Paragraph='Be a part of one of the fastest growing company. in Pakistan, we encourage learning of new technologies and nurture new talents with utmost care.' ButtonContent='Join Us'  />
 
       
-<Technologies/>
+    <div className='relative bottom-16'>
+      <Technologies/>
+      </div>
 <TeamSpotlight/>
 <ConsultWithTeam/>
 <Benifits/>
