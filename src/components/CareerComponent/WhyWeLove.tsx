@@ -24,7 +24,7 @@ const WhyWeLoveItHere = () => {
           {reasons.map((reason) => (
             <div
               key={reason.id}
-              className="py-16 px-6 bg-white rounded-lg shadow-lg border"
+              className="py-16 px-6 h-[350px] bg-white rounded-lg shadow-lg border"
             >
               <div className={`text-4xl ${reason.color} mb-4`}>{reason.icon}</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">

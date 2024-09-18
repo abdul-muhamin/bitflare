@@ -81,7 +81,7 @@
         "image": "/images/team.png",
         "description": "Solve problems, because AI is not your USP anymore...",
         "category": "AI/ML",
-        "url" : "using-pinecone-to-implement-a-personalized-recommendations-system"
+        "url" : "/blog/using-pinecone-to-implement-a-personalized-recommendations-system"
       }
       
     ],
@@ -335,32 +335,32 @@
   {
     "id": 1,
     "title": "When good work is done, we are the first to appreciate it.",
-    "imgSrc": "/images/team.png"
+    "imgSrc": "/images/benefit1.png"
   },
   {
     "id": 2,
     "title": "Excellent career growth and get an opportunity to work with experts.",
-    "imgSrc": "/images/team.png"
+    "imgSrc": "/images/benefit2.png"
   },
   {
     "id": 3,
     "title": "Flexible working hours and even work from home in some cases.",
-    "imgSrc": "/images/team.png"
+    "imgSrc": "/images/benefit3.webp"
   },
   {
     "id": 4,
     "title": "Benefits of Insurance, Snacks Bar, and a fitness club.",
-    "imgSrc": "/images/team.png"
+    "imgSrc": "/images/benefit4.png"
   },
   {
     "id": 5,
     "title": "We have lots of fun and entertainment by doing sports, dinners and hangouts.",
-    "imgSrc": "/images/team.png"
+    "imgSrc": "/images/benefit5.png"
   },
   {
     "id": 6,
     "title": "A Cool and Calm environment so that you can do what you do best.",
-    "imgSrc": "/images/team.png"
+    "imgSrc": "/images/benefit6.png"
   }
 ]
   

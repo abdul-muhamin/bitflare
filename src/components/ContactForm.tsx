@@ -48,7 +48,7 @@ const ContactForm = () => {
 
         {/* Dropdown for 'What are you looking for?' */}
         <select
-          className="p-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+          className="p-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black font-[1.3125rem]"
           required
         >
           <option value="" disabled selected >

@@ -5,6 +5,7 @@ interface ReuseProps {
   Paragraph: string;
   ButtonContent?: string;
   navigate?:string
+  
 }
 
 const ReusableHome: React.FC<ReuseProps> = ({ Heading, Paragraph, ButtonContent , navigate = "/" }) => {

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { Blog } from '../../utils/interface'; // Adjust import path as needed
+import Link from 'next/link';
 
 const SocialBlogs: React.FC = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
@@ -72,7 +73,7 @@ const SocialBlogs: React.FC = () => {
               <h2 className="text-lg font-semibold mb-4">Popular Blogs</h2>
               <div className="space-y-4">
                 {popularBlogs.map((blog) => (
-                  <div key={blog.id} className="flex items-center space-x-4">
+                  <Link key={blog.id} href={blog.url} className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-md transition-all duration-300 ease-in-out">
                     <img
                       src={blog.image}
                       alt={blog.title}
@@ -82,7 +83,7 @@ const SocialBlogs: React.FC = () => {
                       <h3 className="text-sm font-semibold">{blog.title}</h3>
                       <p className="text-sm text-gray-500">By {blog.author}</p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

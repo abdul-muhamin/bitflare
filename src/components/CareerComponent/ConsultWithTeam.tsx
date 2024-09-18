@@ -3,7 +3,7 @@ import AnimatedLineDiv from '../AnimatedLineDiv'
 import Link from 'next/link'
 const ConsultWithTeam = () => {
   return (
-    <div className='bg-gray-800 text-white py-12 px-8'>
+    <div className='bg-[#3f3d56] text-white py-12 px-8'>
         <div className='flex flex-col justify-center align-middle text-white'>
             <h1 className='text-center text-3xl font-bold'>CONSULT WITH EXPERTS REGARDING YOUR PROJECT</h1>
             <div className='flex justify-center text-center mt-4 mb-6'>

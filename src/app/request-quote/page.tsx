@@ -8,7 +8,7 @@ export default function requestQuote() {
     return (
       <main >
 
-        <section className="relative flex mt-24 items-left justify-left bg-background-about bg-cover bg-center">
+        <section className="relative flex items-left justify-left bg-background-about bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-r from-[#3f3d56] to-transparent"></div>
 
         {/* Content */}

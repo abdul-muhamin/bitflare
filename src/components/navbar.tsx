@@ -81,7 +81,7 @@ export default function Navbar() {
 
           {/* Request a Quote Button */}
           <div className="flex items-center">
-          <Link href={"/requestQuote"}>
+          <Link href={"/request-quote"}>
             <button className="bg-[#ff6584] text-white py-3 px-4 rounded-md  transition">
               Request a quote
             </button></Link>
@@ -117,9 +117,11 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="flex flex-row justify-around items-center gap-1 mt-5">
+            <Link href={'/request-quote'}>
         <button className=" w-1/2 p-2 text-white bg-pink-500 font-bold rounded align-middle">
           Request a quote
         </button>
+        </Link>
         <button className="w-1/2 p-2 text-white bg-green hover:bg-green font-bold rounded align-middle">
         <a href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
               Book a meeting

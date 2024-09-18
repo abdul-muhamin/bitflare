@@ -63,7 +63,12 @@ body {
 .css-55vwbm-MuiTimeline-root {
   margin-top: 55px;
 }
-
+.imagebox {
+  width: 200px;
+}
+.imagebox img {
+  width: 100%;
+}
 /* industries we serve */
 /* styles.css */
 .industries-box {
