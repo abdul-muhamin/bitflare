@@ -13,7 +13,7 @@ export default function GenerativeAISolutions() {
           <li>🔄 Automations</li>
         </ul>
         <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:mb-0">
-          <Link href = {"./ourWork"}>
+          <Link href = {"./our-work"}>
           <button className="bg-yellow text-black px-7 py-3 rounded-lg w-full lg:w-auto lg:text-lg">See our work</button></Link>
           <button className="bg-transparent border-2 border-white px-8 py-3 rounded-lg w-full lg:w-auto lg:text-lg">Discuss your project</button>
         </div>

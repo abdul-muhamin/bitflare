@@ -17,7 +17,7 @@ export const navLinks: NavLink[] = [
     name: "Company",
     submenu: true,
     sublinks: [
-      { Head: "About Us", url: "/aboutUs" },
+      { Head: "About Us", url: "/about-us" },
       { Head: "Our Team", url: "/team" },
       { Head: "Careers", url: "/career" },
     ],

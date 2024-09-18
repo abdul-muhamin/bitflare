@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimatedLineDiv from '../AnimatedLineDiv'
+import Link from 'next/link'
 const ConsultWithTeam = () => {
   return (
     <div className='bg-gray-800 text-white py-12 px-8'>
@@ -10,7 +11,8 @@ const ConsultWithTeam = () => {
             <p className='text-center text-xl font-normal mt-2'>We have a team who’s ready to make your dreams into a reality. Let us know what you have in mind.</p>
             <div className="mt-8 text-center">
           <button className="bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">
-          Join Us
+            <Link href={'/contact-us'}>
+          Join Us</Link>
           </button>
         </div>
         </div>

@@ -29,7 +29,7 @@ export default function AchievementsSection() {
 
         {/* Third Achievement */}
         <div className="flex flex-col items-center">
-          <p className="text-6xl font-bold text-yellow-400">90+</p>
+          <p className="text-6xl font-bold text-yellow">90+</p>
           <p className="mt-4 text-center text-lg">Completed projects</p>
         </div>
 

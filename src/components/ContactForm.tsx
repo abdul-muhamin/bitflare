@@ -51,7 +51,7 @@ const ContactForm = () => {
           className="p-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
           required
         >
-          <option value="" disabled selected>
+          <option value="" disabled selected >
             What are you looking for?*
           </option>
           <option value="UX/UI">UI/UX</option>

@@ -4,6 +4,7 @@ import AnimatedLineDiv from '../AnimatedLineDiv'
 const TeamSpotlight: FC = () => {
   return (
     <>
+    <div className='py-20'>
 <div className="max-w-7xl mx-auto text-left mt-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
         TEAM SPOTLIGHT
@@ -18,7 +19,7 @@ Team work, skill development, work hard & party harder defines the core of every
 
 
 
-    <section className="flex flex-col sm:flex-row justify-center items-center py-10 bg-white">
+    <section className="flex flex-col sm:flex-row justify-center items-center py-4 px-8 lg:px-24 bg-white">
       {/* Left Section: Image with custom shapes */}
       <div className="relative w-full sm:w-1/2 flex justify-center">
         {/* Team Image */}
@@ -31,16 +32,10 @@ Team work, skill development, work hard & party harder defines the core of every
         />
 
         {/* Top-left pink and yellow shapes */}
-        <div className="absolute top-[-20px] left-[-20px] flex">
-          <div className="w-14 h-14 bg-pink-500 rounded-full"></div>
-          <div className="w-14 h-14 bg-yellow-500" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}></div>
-        </div>
+        
 
         {/* Bottom-right teal and yellow shapes */}
-        <div className="absolute bottom-[-20px] right-[-20px] flex">
-          <div className="w-14 h-14 bg-yellow-500 rounded-full"></div>
-          <div className="w-14 h-14 bg-teal-700" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}></div>
-        </div>
+        
       </div>
 
       {/* Right Section: Content */}
@@ -68,7 +63,7 @@ Team work, skill development, work hard & party harder defines the core of every
     </section>
 
     {/* 2nd row */}
-    <section className="flex flex-col overflow-hidden sm:flex-row-reverse justify-center items-center py-10 bg-white">
+    <section className="flex flex-col py-4 px-8 lg:px-24 overflow-hidden sm:flex-row-reverse justify-center items-center  bg-white">
   {/* Right Section: Image with custom shapes (Now on the right) */}
   <div className="relative w-full sm:w-1/2 flex justify-center">
     {/* Team Image */}
@@ -81,16 +76,10 @@ Team work, skill development, work hard & party harder defines the core of every
     />
 
     {/* Top-left pink and yellow shapes */}
-    <div className="absolute top-[-20px] left-[-20px] flex">
-      <div className="w-14 h-14 bg-pink-500 rounded-full"></div>
-      <div className="w-14 h-14 bg-yellow-500" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}></div>
-    </div>
+    
 
     {/* Bottom-right teal and yellow shapes */}
-    <div className="absolute bottom-[-20px] right-[-20px] flex">
-      <div className="w-14 h-14 bg-yellow-500 rounded-full"></div>
-      <div className="w-14 h-14 bg-teal-700" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}></div>
-    </div>
+    
   </div>
 
   {/* Left Section: Content (Now on the left) */}
@@ -120,7 +109,7 @@ Team work, skill development, work hard & party harder defines the core of every
 
 {/* 3rd row */}
 
-<section className="flex flex-col sm:flex-row justify-center items-center py-10 bg-white">
+<section className="flex flex-col sm:flex-row justify-center items-center py-4 px-8 lg:px-24 bg-white">
       {/* Left Section: Image with custom shapes */}
       <div className="relative w-full sm:w-1/2 flex justify-center">
         {/* Team Image */}
@@ -133,16 +122,10 @@ Team work, skill development, work hard & party harder defines the core of every
         />
 
         {/* Top-left pink and yellow shapes */}
-        <div className="absolute top-[-20px] left-[-20px] flex">
-          <div className="w-14 h-14 bg-pink-500 rounded-full"></div>
-          <div className="w-14 h-14 bg-yellow-500" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}></div>
-        </div>
+        
 
         {/* Bottom-right teal and yellow shapes */}
-        <div className="absolute bottom-[-20px] right-[-20px] flex">
-          <div className="w-14 h-14 bg-yellow-500 rounded-full"></div>
-          <div className="w-14 h-14 bg-teal-700" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}></div>
-        </div>
+        
       </div>
 
       {/* Right Section: Content */}
@@ -168,6 +151,7 @@ Team work, skill development, work hard & party harder defines the core of every
         </p>
       </div>
     </section>
+    </div>
     </>
   );
 };

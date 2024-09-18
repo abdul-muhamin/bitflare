@@ -105,3 +105,19 @@ body {
 
 /* industries we serve */
  
+/* styles/globals.css or a specific CSS file */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  padding-right: 2.5rem; /* Add space for the custom arrow */
+}
+
+.select-wrapper .arrow-icon {
+  position: absolute;
+  right: 0.5rem; /* Adjust the position of the arrow */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the arrow doesn't interfere with select interaction */
+}

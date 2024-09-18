@@ -39,7 +39,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center bg-white px-20 mt-5">
+    <div className="relative min-h-screen flex flex-col items-center justify-center bg-white px-20">
       {/* SVG Background with Lines */}
       <div className="absolute inset-0 pointer-events-none z-0">
         {cursorOffset.x && (
@@ -53,14 +53,14 @@ const Home: React.FC = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-row items-center justify-center">
-        <div className="text-center lg:text-start px-4 lg:mt-32">
+        <div className="text-center lg:text-start px-4">
           <h1 className="text-3xl text-black leading-1 lg:leading-[1.05] font-bold mb-4 lg:text-6xl  lg:text-start max-w-[65rem]">
             TRANSFORMING IDEAS INTO INNOVATIVE<span className="text-yellow"> SOFTWARE SOLUTIONS</span>
           </h1>
           <p className="text-gray-600 my-12 lg:w-[30rem] font-normal">
             Unleash your potential with end-to-end solutions for consultation, development, deployment, and growth in the dynamic world of innovation.
           </p>
-          <Link href={'./contactUs'}>
+          <Link href={'./contact-us'}>
           <button className="bg-green text-white px-8 py-4 rounded hover:bg-green-700">Contact us</button></Link>
         </div>
         <div className="flex mt-8 space-x-4 sm:content-none">

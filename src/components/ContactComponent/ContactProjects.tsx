@@ -68,7 +68,7 @@ const ContactProjects: React.FC = () => {
 
         {/* View All Work Button */}
         <div className="mt-8 text-center">
-          <Link href="/ourWork">
+          <Link href="/our-work">
             <button className="bg-teal-600 text-white py-3 px-6 rounded-md hover:bg-teal-700 transition">
               View all work
             </button>

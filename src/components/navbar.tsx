@@ -4,11 +4,12 @@ import Link from "next/link";
 import NavbarLinks from "@/utils/navbarLinks";
 import { FaPhone } from 'react-icons/fa';
 import { PopupWidget } from 'react-calendly';
+import { getCalendlyUrl } from "@/utils/calendlyUrl";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
-  const calendlyUrl = 'https://calendly.com/rehany7xa';
+ 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -62,7 +63,7 @@ export default function Navbar() {
           <ul className="flex space-x-8 text-gray-700 text-xl">
             <NavbarLinks />
             <li>
-              <Link href="/ourWork" className="hover:text-teal-500">
+              <Link href="/our-work" className="hover:text-teal-500">
                 Our Work
               </Link>
             </li>
@@ -72,7 +73,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/contactUs" className="hover:text-teal-500">
+              <Link href="/contact-us" className="hover:text-teal-500">
                 Contact Us
               </Link>
             </li>
@@ -87,7 +88,7 @@ export default function Navbar() {
             
           </div>
           <div className="flex items-center text-[#00a884] p-4 border-2 rounded-full shadow-lg">
-          <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+          <a href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
               <FaPhone style={{ transform: 'scaleX(-1)' }} className="text-2xl "/>
             </a>
           </div>
@@ -106,13 +107,13 @@ export default function Navbar() {
               <Link href="">Our Services</Link>
             </li>
             <li>
-              <Link href="/ourWork">Our Work</Link>
+              <Link href="/our-work">Our Work</Link>
             </li>
             <li>
               <Link href="/blogs">Blogs</Link>
             </li>
             <li>
-              <Link href="/contactUs">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
           <div className="flex flex-row justify-around items-center gap-1 mt-5">
@@ -120,7 +121,7 @@ export default function Navbar() {
           Request a quote
         </button>
         <button className="w-1/2 p-2 text-white bg-green hover:bg-green font-bold rounded align-middle">
-        <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+        <a href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
               Book a meeting
             </a>
         </button>

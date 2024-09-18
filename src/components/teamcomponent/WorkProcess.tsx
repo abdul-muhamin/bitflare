@@ -30,16 +30,19 @@ const WorkProcess = () => {
 
   return (
     <>
-      <div className="container mx-auto p-8 text-center">
+      <div className="container mx-auto py-4 px-4 lg:px-24 text-left sm:text-center">
         {/* Title Section */}
-        <h2 className="text-3xl font-semibold mb-5 text-left">WORK PROCESS</h2>
+        <h2 className="text-3xl font-semibold mb-5 text-center lg:text-left md:text-left ">WORK PROCESS</h2>
+        <div className='flex justify-center align-center lg:justify-start lg:align-top
+        md:justify-start md:align-top'>
         <AnimatedLineDiv />
+        </div>
         <div className="flex justify-center mb-4">
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 via-pink-500 to-green-500"></div>
         </div>
 
         {/* Subtitle */}
-        <p className="text-gray-600 w-1/2 mb-10 text-left">
+        <p className="text-gray-600 lg:w-1/2 mb-10 text-center lg:text-left md:text-left  ">
           We choose the best development methodology depending on your project, ensuring the lowest TAT, along with the lowest development cost.
         </p>
 

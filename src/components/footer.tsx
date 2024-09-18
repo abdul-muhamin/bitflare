@@ -32,15 +32,15 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl ">COMPANY</h3>
             <ul className="mt-4 space-y-4 text-lg font-normal ">
-              <li><Link href="/aboutUs">About us</Link></li>
-              <li><Link href="/ourWork">Work</Link></li>
+              <li><Link href="/about-us">About us</Link></li>
+              <li><Link href="/our-work">Work</Link></li>
               <li><Link href="/blogs">Blogs</Link></li>
             </ul>
           </div>
           <div className='align-top justify-start'>
             <h3 className="font-bold text-xl ">SUPPORT</h3>
             <ul className="mt-4 space-y-4 text-lg font-normal ">
-              <li><Link href="/contactUs">Contact us</Link></li>
+              <li><Link href="/contact-us">Contact us</Link></li>
             </ul>
           </div>
         </div>

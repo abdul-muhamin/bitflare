@@ -9,7 +9,7 @@ import Testimonial from '@/components/Testimonial';
 import FeaturedBlogs from '@/components/FeaturedBlog';
 import ContactForm from '@/components/ContactForm';
 import ReusableHome from '@/utils/ReusableHome';
-const AboutUs = () => {
+const page = () => {
   return (
     <>
     
@@ -75,4 +75,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default page;
