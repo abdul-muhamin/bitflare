@@ -23,7 +23,7 @@
       {
         "id": 3,
         "title": "Solve Problems with AI",
-        "author": "Hashir",
+        "author": "Farhan",
         "image": "/images/blog2.png",
         "description": "Solve problems, because AI is not your USP anymore...",
         "category": "AI/ML",
@@ -32,7 +32,7 @@
       {
         "id": 4,
         "title": "Solve Problems with AI",
-        "author": "Hashir",
+        "author": "Ali",
         "image": "/images/team.png",
         "description": "Solve problems, because AI is not your USP anymore...",
         "category": "AI/ML",
@@ -41,7 +41,7 @@
       {
         "id": 5,
         "title": "Solve Problems with AI",
-        "author": "Hashir",
+        "author": "Haider",
         "image": "/images/webprojects.png",
         "description": "Solve problems, because AI is not your USP anymore...",
         "category": "AI/ML",
@@ -49,35 +49,35 @@
       },
       {
         "id": 6,
-        "title": "Solve Problems with AI",
-        "author": "Hashir",
+        "title": "Translating Languages using PyTorch Transformers",
+        "author": "Arslan",
         "image": "/images/webprojects2.png",
-        "description": "Solve problems, because AI is not your USP anymore...",
+        "description": "Translating Languages using PyTorch Transformers...",
         "category": "AI/ML",
         "url" : "/blog/translating-languages-using-py-torch-transformers"
       },
       {
         "id": 7,
-        "title": "Solve Problems with AI",
-        "author": "Hashir",
+        "title": "Ultimate Guide to Elastic Beanstalk Deployments With Real World Example",
+        "author": "Sidra",
         "image": "/images/webprojects3.png",
-        "description": "Solve problems, because AI is not your USP anymore...",
+        "description": "SUltimate Guide to Elastic Beanstalk Deployments With Real World Example...",
         "category": "AI/ML",
         "url" : "/blog/ultimate-guide-to-elastic-beanstalk-deployments-with-real-world-example"
       },
       {
         "id": 8,
-        "title": "Solve Problems with AI",
+        "title": "ReactFlow for Supply Chain Visualisation: A Technical Guide",
         "author": "Hashir",
         "image": "/images/webprojects4.png",
-        "description": "Solve problems, because AI is not your USP anymore...",
+        "description": "ReactFlow for Supply Chain Visualisation: A Technical Guide",
         "category": "AI/ML",
         "url" : "/blog/reactflow-for-supply-chain-visualisation-a-technical-guide"
       },
       {
         "id": 9,
         "title": "Solve Problems with AI",
-        "author": "Hashir",
+        "author": "Sidra",
         "image": "/images/team.png",
         "description": "Solve problems, because AI is not your USP anymore...",
         "category": "AI/ML",
