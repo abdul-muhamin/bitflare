@@ -14,12 +14,12 @@ export default function TimelineAbout() {
     <div className='my-4'><h1 className='text-4xl font-bold text-center tracking- '>HISTORY</h1>
     </div>
     <div className='flex justify-center align-middle'><AnimatedLineDiv/></div>
-    <div className='mt-[200px]'>
+    <div className='hidden lg:flex mt-[200px]'>
     <Timeline    position="alternate">
       <TimelineItem className='h-[400px]'>
         <TimelineOppositeContent color="text.secondary">
         <div className=" mt-20 lg:w-56 lg:h-48 relative">
-        <Image src="/images/team3.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/></div> 
+        <Image src="/images/blog1.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/></div> 
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot className='bg-red' />
@@ -52,7 +52,7 @@ export default function TimelineAbout() {
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
         <div className=" mt-20 lg:w-56 lg:h-48 relative">
-        <Image src="/images/team3.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/></div> 
+        <Image src="/images/team2.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg"/></div> 
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot  className='bg-yellow' />
@@ -66,6 +66,43 @@ export default function TimelineAbout() {
       
     </Timeline>
     </div>
+    <div className='flex flex-col lg:hidden'>
+        <div className="mb-10">
+        <div className="m-auto mt-10 p-10 relative h-[200px] w-[80%]">
+            <Image src="/images/team3.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg" />
+          </div>
+          <div className="text-center mt-4">
+            <h1 className="text-2xl font-bold">We started from</h1>
+            <p className="text-xl font-normal py-4">
+              Our journey began with humble beginnings, taking on small projects with a determined spirit...
+            </p>
+          </div>
+        </div>
+
+        <div className="mb-10">
+          <div className="p-10 m-auto relative h-[200px] w-[80%]">
+            <Image src="/images/team3.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg" />
+          </div>
+          <div className="text-center mt-4">
+            <h1 className="text-2xl font-bold">Our Mission</h1>
+            <p className="text-xl font-normal py-4">
+              Since our founding in 2021, we have been driven by a mission to deliver outstanding value...
+            </p>
+          </div>
+        </div>
+
+        <div className="mb-10">
+          <div className="p-10 m-auto relative h-[200px] w-[80%]">
+            <Image src="/images/team3.png" alt="Team Discussion" layout="fill" objectFit="cover" className="rounded-lg shadow-lg" />
+          </div>
+          <div className="text-center mt-4">
+            <h1 className="text-2xl font-bold">Future</h1>
+            <p className="text-xl font-normal py-4">
+              Reflecting on how far we have come, we embrace the future with excitement and determination...
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -290,18 +290,18 @@
     { "id": 6, "label": "Startups we worked with", "value": "10+", "icon": "🤝", "color": "text-yellow-500" }
   ],
   "teamMembers": [
-    { "name": "Abdul Wahab", "role": "Software Engineer", "category": "Software Engineer", "image": "/images/team.png" },
-    { "name": "Adeel Ahmed", "role": "Associate Software Engineer", "category": "Software Engineer", "image": "/images/team.png" },
-    { "name": "Adnan Ali", "role": "Associate Software Engineer", "category": "Software Engineer", "image": "/images/team.png" },
-    { "name": "Ahsan Abdullah", "role": "Sales Development Executive", "category": "Business Developer", "image": "/images/team.png" },
-    { "name": "Aimen Nadeem", "role": "HR Assistant", "category": "HR Manager", "image": "/images/team.png" }
+    { "name": "Abdul Wahab", "role": "Software Engineer", "category": "Software Engineer", "image": "/images/people1.png" },
+    { "name": "Adeel Ahmed", "role": "Associate Software Engineer", "category": "Software Engineer", "image": "/images/people1.png" },
+    { "name": "Adnan Ali", "role": "Associate Software Engineer", "category": "Software Engineer", "image": "/images/people1.png" },
+    { "name": "Ahsan Abdullah", "role": "Sales Development Executive", "category": "Business Developer", "image": "/images/people1.png" },
+    { "name": "Aimen Nadeem", "role": "HR Assistant", "category": "HR Manager", "image": "/images/people1.png" }
   ],
-  "executiveMember": [{
+  "executiveMember": {
     "name": "Mirza Hashir Baig",
     "role": "Chief Executive Officer",
     "description": "Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients. Led by our CEO, Mirza Hashir Baig who himself is a Cloud genius and a tech enthusiast, together the team has the capabilities to bring together unique and efficient solutions to your technical needs.",
     "image": "/images/people1.png"
-  }],
+  },
   "reasons": [ {
     "id": 1,
     "title": "Work with brands",

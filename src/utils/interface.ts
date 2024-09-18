@@ -118,9 +118,11 @@ export interface ExecutiveMember {
   role: string;
   description: string;
   image: string;
+  executiveMember?:string
 }
 
 export interface TeamMember {
+  executiveMember?:string
   name: string;
   role: string;
   category: string;
