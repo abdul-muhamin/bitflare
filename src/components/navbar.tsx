@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="text-3xl font-[500] text-teal-600">
           <Link href={'/'} >
-          ripeseed<span className="text-orange-500">.io</span></Link>
+          bitflare<span className="text-orange-500">.io</span></Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -116,13 +116,13 @@ export default function Navbar() {
               <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
-          <div className="flex flex-row justify-around items-center gap-1 mt-5">
+          <div className="flex flex-row justify-center items-center gap-1 mt-5">
             <Link href={'/request-quote'}>
-        <button className=" w-1/2 p-2 text-white bg-pink-500 font-bold rounded align-middle">
+        <button className=" w-full p-2 text-white bg-pink-500 font-bold rounded align-middle">
           Request a quote
         </button>
         </Link>
-        <button className="w-1/2 p-2 text-white bg-green hover:bg-green font-bold rounded align-middle">
+        <button className="w-ful p-2 text-white bg-green hover:bg-green font-bold rounded align-middle">
         <a href={getCalendlyUrl()} target="_blank" rel="noopener noreferrer">
               Book a meeting
             </a>

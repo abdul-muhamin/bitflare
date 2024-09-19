@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='CI CD Plugins' Paragraph="At RipeSeed, we understand the importance of seamless and efficient software development and deployment. That's why we have embraced Continuous Integration and Continuous Deployment (CI/CD) practices to revolutionize how we deliver high-quality applications." ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='CI CD Plugins' Paragraph="At RipeSeed, we understand the importance of seamless and efficient software development and deployment. That's why we have embraced Continuous Integration and Continuous Deployment (CI/CD) practices to revolutionize how we deliver high-quality applications." ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

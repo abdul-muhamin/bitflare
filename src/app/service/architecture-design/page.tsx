@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Architecture Design' Paragraph='At RipeSeed, we excel in architecting cutting-edge solutions in cloud services. Our experienced team of experts is well-versed in designing robust and scalable architectures that leverage the full potential of cloud technologies.' ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Architecture Design' Paragraph='At RipeSeed, we excel in architecting cutting-edge solutions in cloud services. Our experienced team of experts is well-versed in designing robust and scalable architectures that leverage the full potential of cloud technologies.' ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

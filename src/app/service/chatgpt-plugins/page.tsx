@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Chat Plugins' Paragraph='Chat GPT plugins revolutionize how we interact and engage with our audience, and at RipeSeed; we specialize in utilizing the power of these cutting-edge technologies. Our expert developers have extensive experience integrating Chat GPT plugins, enabling businesses to deliver highly immersive and dynamic conversational experiences.' ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Chat Plugins' Paragraph='Chat GPT plugins revolutionize how we interact and engage with our audience, and at RipeSeed; we specialize in utilizing the power of these cutting-edge technologies. Our expert developers have extensive experience integrating Chat GPT plugins, enabling businesses to deliver highly immersive and dynamic conversational experiences.' ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

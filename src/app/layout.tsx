@@ -8,7 +8,7 @@ import Head from "next/head"; // Import Head from next/head
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "RipeSeed",
+  title: "BitFlare",
   description: "Your description here",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>RipeSeed</title>
+        <title>Bitflare</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
         <link

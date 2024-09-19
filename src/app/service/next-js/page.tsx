@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Next.Js' Paragraph="Next.js, the cutting-edge framework, has revolutionized web development, and we have utilized its power to its fullest extent. Our team of top Next.js developers has been at the forefront of this technology since its inception" ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Next.Js' Paragraph="Next.js, the cutting-edge framework, has revolutionized web development, and we have utilized its power to its fullest extent. Our team of top Next.js developers has been at the forefront of this technology since its inception" ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

@@ -1,8 +1,19 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import AnimatedLineDiv from './AnimatedLineDiv';
-import { FaUniversity, FaGraduationCap, FaPlayCircle, FaUtensils, FaGamepad, FaHeartbeat, FaHome, FaFutbol, FaTruck, FaPlane } from 'react-icons/fa';
-import { Industry } from '../utils/interface'; // Import the interface
+"use client";
+import React, { useState, useEffect } from "react";
+import AnimatedLineDiv from "./AnimatedLineDiv";
+import {
+  FaUniversity,
+  FaGraduationCap,
+  FaPlayCircle,
+  FaUtensils,
+  FaGamepad,
+  FaHeartbeat,
+  FaHome,
+  FaFutbol,
+  FaTruck,
+  FaPlane,
+} from "react-icons/fa";
+import { Industry } from "../utils/interface"; // Import the interface
 
 const iconMap: { [key: string]: JSX.Element } = {
   FaUniversity: <FaUniversity />,
@@ -22,10 +33,10 @@ const IndustriesWeServe: React.FC = () => {
 
   useEffect(() => {
     // Fetch the industries data from the public data.json file
-    fetch('/data.json')
+    fetch("/data.json")
       .then((response) => response.json())
       .then((data) => setIndustries(data.industries))
-      .catch((err) => console.error('Error fetching industries:', err));
+      .catch((err) => console.error("Error fetching industries:", err));
   }, []);
 
   return (
@@ -38,20 +49,28 @@ const IndustriesWeServe: React.FC = () => {
           <AnimatedLineDiv />
         </div>
         <p className="mt-4 text-gray-600 text-2xl font-semibold text-left">
-          Our mobile and web development expertise extends to various popular industries, you can find a few of them below.
+          Our mobile and web development expertise extends to various popular
+          industries, you can find a few of them below.
         </p>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
         {industries.map((industry, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md transition duration-300 border-4 border-transparent hover:border-green "
+            className="relative flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md transition duration-300 border-[3px] border-transparent group"
           >
             {/* Render the icon with a larger size */}
-            <div className="text-6xl mb-4 text-center" style={{ color: industry.color }}>
+            <div
+              className="text-6xl mb-4 text-center"
+              style={{ color: industry.color }}
+            >
               {iconMap[industry.icon]}
             </div>
-            <h3 className="text-xl font-medium text-gray-800 text-center">{industry.name}</h3>
+            <h3 className="text-xl font-medium text-gray-800 text-center">
+              {industry.name}
+            </h3>
+            {/* Animated Border */}
+            <div className="absolute inset-0 border-animation"></div>
           </div>
         ))}
       </div>

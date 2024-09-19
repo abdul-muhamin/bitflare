@@ -19,7 +19,7 @@ const team = () => {
       </div>
 
  {/* how we are */}
- <div className="bg-white py-12 px-6 lg:py-16 lg:px-20">
+ <div className="bg-white py-12 px-6 lg:py-16 lg:px-24">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
         <div className="lg:w-1/2 lg:order-1">
         

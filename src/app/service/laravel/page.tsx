@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Larvel' Paragraph="Maximizing performance and delivering seamless gameplay experiences are at the core of our game development services. Our skilled team excels in game optimization techniques, ensuring your games run smoothly across different platforms and devices." ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Larvel' Paragraph="Maximizing performance and delivering seamless gameplay experiences are at the core of our game development services. Our skilled team excels in game optimization techniques, ensuring your games run smoothly across different platforms and devices." ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

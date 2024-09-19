@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Nest.Js' Paragraph="We excel in Nest JS development, harnessing the power of this cutting-edge technology to build robust and scalable web applications. Our team of expert Nest JS developers has been at the forefront of this framework since its inception, ensuring we deliver exceptional solutions to our clients." ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Nest.Js' Paragraph="We excel in Nest JS development, harnessing the power of this cutting-edge technology to build robust and scalable web applications. Our team of expert Nest JS developers has been at the forefront of this framework since its inception, ensuring we deliver exceptional solutions to our clients." ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

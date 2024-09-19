@@ -126,3 +126,106 @@ body {
   transform: translateY(-50%);
   pointer-events: none; /* Ensure the arrow doesn't interfere with select interaction */
 }
+
+
+/* border animation industires we serve */
+/* Add this CSS in your global stylesheet or in a CSS module */
+
+.border-animation {
+  content: '';
+  position: absolute;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(to right, green 0%, green 100%),
+    linear-gradient(to top, green 50%, transparent 50%),
+    linear-gradient(to top, green 50%, transparent 50%),
+    linear-gradient(to right, green 0%, green 100%),
+    linear-gradient(to left, green 0%, green 100%);
+  background-size: 100% 2px, 2px 200%, 2px 200%, 0% 2px, 0% 2px;
+  background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+  background-repeat: no-repeat, no-repeat;
+  transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out,
+    background-size 0.3s ease-in-out;
+  transform: scaleX(0) rotate(0deg);
+  transition-delay: 0.6s, 0.3s, 0s;
+}
+
+.group:hover .border-animation {
+  background-size: 200% 2px, 2px 400%, 2px 400%, 55% 2px, 55% 2px;
+  background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+  transform: scaleX(1) rotate(0deg);
+  transition-delay: 0s, 0.3s, 0.6s;
+}
+
+/* border animation industires we serve */
+
+
+/* custom select  */
+.custom-select {
+  position: relative;
+  top: 5px;
+  border: 1px solid rgb(209, 208, 208);
+  border-radius:5px ;
+  /* font-family: Arial; */
+}
+
+.custom-select select {
+  display: none; /* Hide the original SELECT element */
+}
+
+.select-selected {
+  background-color: white;
+  padding: 26px 12px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: black;
+  cursor: pointer;
+  user-select: none;
+  position: relative; /* Ensure positioning of the dropdown arrow */
+}
+
+/* Arrow icon */
+.select-arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px; /* Adjust right position for spacing */
+  transform: translateY(-50%); /* Center the arrow vertically */
+  color: black; /* Change arrow color */
+}
+
+/* Dropdown items */
+.select-items div, .select-selected {
+  color: black;
+  /* padding: 24px 12px; */
+  border: 1px solid transparent;
+  /* border-color: black; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+  user-select: none;
+}
+.select-items div{
+  padding: 5px 10px;
+}
+/* Dropdown items container */
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  /* padding: 5px; */
+}
+
+/* Hide dropdown items */
+.select-hide {
+  display: none;
+}
+
+/* Highlight items on hover and selected item */
+.select-items div:hover, .same-as-selected {
+  background-color: rgb(46, 46, 235);
+}

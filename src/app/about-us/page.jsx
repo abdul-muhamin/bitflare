@@ -9,6 +9,7 @@ import Testimonial from '@/components/Testimonial';
 import FeaturedBlogs from '@/components/FeaturedBlog';
 import ContactForm from '@/components/ContactForm';
 import ReusableHome from '@/utils/ReusableHome';
+import AchievementsSection from '@/components/AchievementsSection';
 const page = () => {
   return (
     <>
@@ -66,6 +67,7 @@ const page = () => {
 
     {/* timeline */}
     <TimelineAbout/>
+    <AchievementsSection/>
     <IndustriesWeServe/>
     <Testimonial/>
     <FeaturedBlogs/>

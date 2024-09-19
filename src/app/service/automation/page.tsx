@@ -10,7 +10,7 @@ import ServicesProject from '@/components/servicesProject'
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Automation' Paragraph='Automation is at the heart of our Chrome Extensions service, allowing us to deliver robust and efficient solutions to our clients. With our expertise in automation technologies, we empower businesses to streamline their processes, enhance productivity, and achieve optimal results.' ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Automation' Paragraph='Automation is at the heart of our Chrome Extensions service, allowing us to deliver robust and efficient solutions to our clients. With our expertise in automation technologies, we empower businesses to streamline their processes, enhance productivity, and achieve optimal results.' ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

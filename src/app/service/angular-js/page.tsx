@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Angular.js' Paragraph='Angular JS has revolutionized the world of web development, and we have embraced this powerful technology to its fullest potential. With extensive experience and expertise in Angular JS, we have been at the forefront of delivering exceptional web development solutions.' ButtonContent='Contact Us' />
+      <ReusableHome Heading='Angular.js' Paragraph='Angular JS has revolutionized the world of web development, and we have embraced this powerful technology to its fullest potential. With extensive experience and expertise in Angular JS, we have been at the forefront of delivering exceptional web development solutions.' ButtonContent='Contact Us' navigate='/contact-us' />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Content Generation' Paragraph="At RipeSeed, we understand the power of compelling content in driving engagement and enhancing user experiences. Our team of expert content generators specializes in creating captivating and impactful content that resonates with your target audience." ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Content Generation' Paragraph="At RipeSeed, we understand the power of compelling content in driving engagement and enhancing user experiences. Our team of expert content generators specializes in creating captivating and impactful content that resonates with your target audience." ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

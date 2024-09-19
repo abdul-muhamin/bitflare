@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Flask' Paragraph="When it comes to developing hybrid apps that are robust, scalable, and feature-rich, Firebase stands out as a game-changing technology. At our Hybrid App Development Company, we harness the power of Firebase to create cutting-edge mobile app solutions for our clients." ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Flask' Paragraph="When it comes to developing hybrid apps that are robust, scalable, and feature-rich, Firebase stands out as a game-changing technology. At our Hybrid App Development Company, we harness the power of Firebase to create cutting-edge mobile app solutions for our clients." ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

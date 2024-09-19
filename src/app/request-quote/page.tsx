@@ -13,7 +13,7 @@ export default function requestQuote() {
 
         {/* Content */}
         <div className="text-left items-left relative z-10 px-32 py-20">
-          <h1 className="text-5xl font-bold text-white mb-4">REQUEST A QUOTE'</h1>
+          <h1 className="text-5xl font-bold text-white mb-4">REQUEST A QUOTE</h1>
           <p className="text-xl/10 text-white mb-8 max-w-lg">
           We ensure we get back to you within 24 hours, with an estimate ready to be evaluated by you.
           </p>

@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Flutter' Paragraph="In the rapidly evolving world of app development, Flutter has emerged as a game-changer. As a leading hybrid app development company, we have embraced Flutter's capabilities and harnessed its potential to deliver cutting-edge mobile app solutions. Our team of experienced developers has mastered the art of Flutter, enabling us to create high-performing and visually stunning hybrid apps across industries and niches." ButtonContent='Contact Us' navigate = "/contactUs" />
+      <ReusableHome Heading='Flutter' Paragraph="In the rapidly evolving world of app development, Flutter has emerged as a game-changer. As a leading hybrid app development company, we have embraced Flutter's capabilities and harnessed its potential to deliver cutting-edge mobile app solutions. Our team of experienced developers has mastered the art of Flutter, enabling us to create high-performing and visually stunning hybrid apps across industries and niches." ButtonContent='Contact Us' navigate = "/contact-us" />
       <div className='relative bottom-16'>
         <Technologies/>
       </div>

@@ -10,7 +10,7 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='React.Js' Paragraph="At RipeSeed, we are passionate about harnessing the power of React to deliver exceptional web development solutions. Our top-notch React developers have extensive experience leveraging this cutting-edge technology to create dynamic and highly interactive web applications." ButtonContent='Contact Us'/>
+      <ReusableHome Heading='React.Js' Paragraph="At RipeSeed, we are passionate about harnessing the power of React to deliver exceptional web development solutions. Our top-notch React developers have extensive experience leveraging this cutting-edge technology to create dynamic and highly interactive web applications." ButtonContent='Contact Us' navigate='/contact-us'/>
       <div className='relative bottom-16' >
         <Technologies/>
       </div>

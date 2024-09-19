@@ -10,7 +10,8 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Web Scraping' Paragraph="At RipeSeed, we understand the power of web scraping and its immense potential to unlock valuable business data. With our expertise in web scraping technologies, we offer cutting-edge solutions that help you gather and analyze data from various online sources." ButtonContent='Contact Us'/>
+      <ReusableHome Heading='Web Scraping' Paragraph="At RipeSeed, we understand the power of web scraping and its immense potential to unlock valuable business data. With our expertise in web scraping technologies, we offer cutting-edge solutions that help you gather and analyze data from various online sources." ButtonContent='Contact Us'
+      navigate='/contact-us'/>
       <div className='relative bottom-16' >
         <Technologies/>
       </div>

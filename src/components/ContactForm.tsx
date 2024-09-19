@@ -1,7 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState } from 'react';
+import CustomSelect from '@/components/CustomSelect';
 import AnimatedLineDiv from "./AnimatedLineDiv";
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
+  const [selectedBudget, setSelectedBudget] = useState<string>('');
+  const [selectedService, setSelectedService] = useState<string>('');
+
+  const handleBudgetChange = (value: string) => {
+    setSelectedBudget(value);
+  };
+
+  const handleCountryChange = (value: string) => {
+    setSelectedService(value);
+  };
   return (
     <div className="max-w-full mx-auto px-12 bg-white rounded-lg ">
       {/* Heading Section */}
@@ -47,7 +58,7 @@ const ContactForm = () => {
         />
 
         {/* Dropdown for 'What are you looking for?' */}
-        <select
+        {/* <select
           className="p-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black font-[1.3125rem]"
           required
         >
@@ -60,12 +71,29 @@ const ContactForm = () => {
           <option value="Web/Mobile Application">Web/Mobile Application</option>
           <option value="game-development">Game Development</option>
           <option value="Consultancy">Consultancy</option>
-          <option value="Others">Others</option>
-          {/* Add more options as needed */}
-        </select>
+          <option value="Others">Others</option> */}
+          
+        {/* </select> */}
+
+        <div>
+            <CustomSelect
+              options={[
+                { value: '', label: 'what are you looking for' },
+                { value: 'UI/UX', label: 'UI/UX' },
+                { value: 'Chrome Extantion', label: 'Chrome Extantion' },
+                { value: 'Cloud Services', label: 'Cloud Services' },
+                { value: 'Web/Mobile Application', label: 'Web/Mobile Application' },
+                { value: 'game-development', label: 'game-development' },
+                { value: 'Consultancy', label: 'Consultancy' },
+                { value: 'Others', label: 'Others' },
+              ]}
+              selectedValue={selectedService}
+              onChange={handleCountryChange}
+            />
+          </div>
 
         {/* Dropdown for 'Select Budget' */}
-        <select
+        {/* <select
           className="p-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
           required
         >
@@ -76,8 +104,21 @@ const ContactForm = () => {
           <option value="5000-10000">$10,000</option>
           <option value="20000">$20,000</option>
           <option value="not found yet">Not Found Yet</option>
-          {/* Add more options as needed */}
-        </select>
+          Add more options as needed
+        </select> */}
+         <div>
+            <CustomSelect
+              options={[
+                { value: '', label: 'Select Budget' },
+                { value: '5000$', label: '5000$' },
+                { value: '10000$', label: '10000$' },
+                { value: '20000$', label: '20000$' },
+                { value: 'Not Found Yet', label: 'Not Found Yet' },
+              ]}
+              selectedValue={selectedBudget}
+              onChange={handleBudgetChange}
+            />
+          </div>
 
         {/* Textarea for 'How Can We Help' */}
         <textarea

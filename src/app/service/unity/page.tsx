@@ -10,8 +10,8 @@ import ServicesProject from "@/components/servicesProject"
 const page = () => {
   return (
     <div>
-      <ReusableHome Heading='Unity' Paragraph="Unity, the industry-leading game development platform, forms the backbone of our game development services. With our expertise in Unity, we create immersive and engaging gaming experiences that captivate players across platforms." ButtonContent='Contact Us'/>
-      <div className='relative bottom-16' >
+      <ReusableHome Heading='Unity' Paragraph="Unity, the industry-leading game development platform, forms the backbone of our game development services. With our expertise in Unity, we create immersive and engaging gaming experiences that captivate players across platforms." ButtonContent='Contact Us' navigate='/contact-us'/>
+      <div className='relative bottom-16'>
         <Technologies/>
       </div>
       <ServicesProject/>

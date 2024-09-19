@@ -35,7 +35,7 @@ const ReasonToConsider: React.FC = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
           <Image
-            src='/images/reasonconsider.webp'
+            src='/images/reasonconsider.png'
             alt="AWS Illustration"
             width={500}
             height={300}
